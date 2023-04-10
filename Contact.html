@@ -162,21 +162,26 @@
                         </li>
                     </ul>
                 </div>
+
+
                 <div class="col-md-6 col-sm-6">
-                    <form id="main-contact-form" name="contact-form" method="post" action="#">
+                    <form id="main-contact-form" name="contact-form" method="post" action="ContactDB.php">
                         <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" placeholder="Name"
                                         required="required">
                                 </div>
                             </div>
+
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="email" name="email" class="form-control" placeholder="Email Address"
                                         required="required">
                                 </div>
                             </div>
+
                         </div>
                         <div class="form-group">
                             <input type="text" name="subject" class="form-control" placeholder="Subject"
@@ -186,9 +191,12 @@
                             <textarea name="message" id="message" class="form-control" rows="4"
                                 placeholder="Enter your message" required="required"></textarea>
                         </div>
-                        <a class="btn-send col-md-12 col-sm-12 col-xs-12" href="#">Send Now</a>
+                        <input class="btn-send col-md-12 col-sm-12 col-xs-12" type="submit" value="submit" />
+                        <!-- <a class="btn-send col-md-12 col-sm-12 col-xs-12" href="#" name="submit">Submit</a> -->
                     </form>
                 </div>
+
+
             </div>
         </div>
     </section>
