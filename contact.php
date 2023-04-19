@@ -7,7 +7,7 @@ $txtsubject = $_POST['txtsubject'];
 $txtmessage = $_POST['txtmessage'];
 
 //database connection
-$connection = new mysqli("localhost", "root", "", "contactdatabase");
+$connection = new mysqli("localhost", "root", "", "LascomDB");
 if ($connection->connect_error) {
     die("Failed to connect: " . $connection->connect_error);
 } else {
