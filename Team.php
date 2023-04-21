@@ -24,9 +24,7 @@
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 
     <!--Font-Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Owl-Slider-->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -51,8 +49,7 @@
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -65,13 +62,13 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="Home.html">Home</a></li>
-                            <li><a href="Services.html">Service</a></li>
-                            <li><a href="Features.html">Features</a></li>
-                            <li><a href="Portfolio.html">Portfolio</a></li>
-                            <li class="active"><a class="scroll" href="Team.html">Team</a></li>
-                            <li><a href="Blog.html">Blog</a></li>
-                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="Home.php">Home</a></li>
+                            <li><a href="Services.php">Service</a></li>
+                            <li><a href="Features.php">Features</a></li>
+                            <li><a href="Portfolio.php">Portfolio</a></li>
+                            <li class="active"><a class="scroll" href="Team.php">Team</a></li>
+                            <li><a href="Blog.php">Blog</a></li>
+                            <li><a href="Contact.php">Contact</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -90,13 +87,10 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <p>Lascom is a dynamic software service company that is driven by a passion for solving
-                                    complex
-                                    problems. With a team of highly skilled professionals, they are dedicated to
-                                    developing innovative
-                                    solutions that help businesses and organizations improve their operations, increase
-                                    efficiency, and
-                                    achieve their goals.
+                                <p>
+                                    <?php
+                                    include "db/Paragraph.php";
+                                    ?>
                                 </p>
 
                             </div>
@@ -109,13 +103,10 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <p>Lascom is a dynamic software service company that is driven by a passion for solving
-                                    complex
-                                    problems. With a team of highly skilled professionals, they are dedicated to
-                                    developing innovative
-                                    solutions that help businesses and organizations improve their operations, increase
-                                    efficiency, and
-                                    achieve their goals.
+                                <p>
+                                    <?php
+                                    include "db/Paragraph.php";
+                                    ?>
                                 </p>
 
                             </div>
@@ -123,10 +114,8 @@
                     </div>
                 </div>
 
-                <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i
-                        class="fa fa-angle-left"></i></a>
-                <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i
-                        class="fa fa-angle-right"></i></a>
+                <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
         <!--Team-Section-Start-->
@@ -142,82 +131,65 @@
                 </div>
                 <!-- #1 -->
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s"
-                        data-wow-delay=".1s">
+                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".1s">
                         <div class="team-sec">
-                            <div class="team-img"> <img src="images/Team/Chairman.jpg" class="img-responsive"
-                                    alt="Chairman">
+                            <div class="team-img"> <img src="images/Team/Chairman.jpg" class="img-responsive" alt="Chairman">
                                 <div class="team-desc">
                                     <h5>Shri P Ravi</h5>
                                     <h6>Chairman</h6>
                                     <p>A Versatile and Strategic Entrepreneur in Service Industry.</p>
                                     <ul class="team-social-icon">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-                                                    class="fa fa-facebook-f"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i
-                                                    class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- #2 -->
-                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s"
-                        data-wow-delay=".2s">
+                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <div class="team-sec">
                             <div class="team-img"> <img src="images/Team/Chairman.jpg" class="img-responsive" alt="">
                                 <div class="team-desc">
                                     <h5>Dr. Ananda Krishnan DS</h5>
                                     <p>Our executive director</p>
                                     <ul class="team-social-icon">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-                                                    class="fa fa-facebook-f"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i
-                                                    class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- #3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s"
-                        data-wow-delay=".3s">
+                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
                         <div class="team-sec">
                             <div class="team-img"> <img src="images/Team/Chairman.jpg" class="img-responsive" alt="">
                                 <div class="team-desc">
                                     <h5>Mr. Parthiban</h5>
                                     <p>Assistant General Manager, IT</p>
                                     <ul class="team-social-icon">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-                                                    class="fa fa-facebook-f"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i
-                                                    class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- #4 -->
-                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s"
-                        data-wow-delay=".4s">
+                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="team-sec">
                             <div class="team-img"> <img src="images/Team/Chairman.jpg" class="img-responsive" alt="">
                                 <div class="team-desc">
                                     <h5>Rajesh Krishnamurthi </h5>
                                     <p>Head IT</p>
                                     <ul class="team-social-icon">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-                                                    class="fa fa-facebook-f"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i
-                                                    class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -235,21 +207,18 @@
                 <div class="slider-text">
                     <div id="owl-testi" class="owl-carousel owl-theme">
                         <div class="item">
-                            <div class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/02.jpg"
-                                    class="img-circle" alt="">
+                            <div class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/02.jpg" class="img-circle" alt="">
                                 <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
                                 <h6>Kishore</h6>
                                 <p>Web Developer</p>
                             </div>
                         </div>
-                        <div class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/03.jpg" class="img-circle"
-                                alt="">
+                        <div class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/03.jpg" class="img-circle" alt="">
                             <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
                             <h6>Nadim Khan</h6>
                             <p>Web Designer</p>
                         </div>
-                        <div class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/04.jpg" class="img-circle"
-                                alt="">
+                        <div class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/04.jpg" class="img-circle" alt="">
                             <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
                             <h6>John Hood</h6>
                             <p>CEO</p>

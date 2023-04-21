@@ -24,9 +24,7 @@
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 
     <!--Font-Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Owl-Slider-->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -51,8 +49,7 @@
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -65,13 +62,13 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="Home.html">Home</a></li>
-                            <li><a href="Services.html">Service</a></li>
-                            <li><a href="Features.html">Features</a></li>
-                            <li class="active"><a class="scroll" href="Portfolio.html">Portfolio</a></li>
-                            <li><a href="Team.html">Team</a></li>
-                            <li><a href="Blog.html">Blog</a></li>
-                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="Home.php">Home</a></li>
+                            <li><a href="Services.php">Service</a></li>
+                            <li><a href="Features.php">Features</a></li>
+                            <li class="active"><a class="scroll" href="Portfolio.php">Portfolio</a></li>
+                            <li><a href="Team.php">Team</a></li>
+                            <li><a href="Blog.php">Blog</a></li>
+                            <li><a href="Contact.php">Contact</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -90,13 +87,10 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <p>Lascom is a dynamic software service company that is driven by a passion for solving
-                                    complex
-                                    problems. With a team of highly skilled professionals, they are dedicated to
-                                    developing innovative
-                                    solutions that help businesses and organizations improve their operations, increase
-                                    efficiency, and
-                                    achieve their goals.
+                                <p>
+                                    <?php
+                                    include "db/Paragraph.php";
+                                    ?>
                                 </p>
 
                             </div>
@@ -109,13 +103,10 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <p>Lascom is a dynamic software service company that is driven by a passion for solving
-                                    complex
-                                    problems. With a team of highly skilled professionals, they are dedicated to
-                                    developing innovative
-                                    solutions that help businesses and organizations improve their operations, increase
-                                    efficiency, and
-                                    achieve their goals.
+                                <p>
+                                    <?php
+                                    include "db/Paragraph.php";
+                                    ?>
                                 </p>
 
                             </div>
@@ -123,10 +114,8 @@
                     </div>
                 </div>
 
-                <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i
-                        class="fa fa-angle-left"></i></a>
-                <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i
-                        class="fa fa-angle-right"></i></a>
+                <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
 
@@ -154,10 +143,8 @@
                 </div>
                 <div class="portfolio-items">
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item creative">
-                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/01.jpg"
-                                alt="">
-                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/01.jpg"
-                                    data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/01.jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/01.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-1</h6>
                                 <p>Lorem Ipsum</p>
                             </div>
@@ -165,10 +152,8 @@
                     </div>
                     <!--/.portfolio-item-->
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate portfolio">
-                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/02.jpg"
-                                alt="">
-                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/02.jpg"
-                                    data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/02.jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/02.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-2</h6>
                                 <p>Lorem Ipsum</p>
                             </div>
@@ -176,10 +161,8 @@
                     </div>
                     <!--/.portfolio-item-->
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item creative">
-                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/03.jpg"
-                                alt="">
-                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/03.jpg"
-                                    data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/03.jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/03.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-3</h6>
                                 <p>Lorem Ipsum</p>
                             </div>
@@ -187,10 +170,8 @@
                     </div>
                     <!--/.portfolio-item-->
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate">
-                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/04.jpg"
-                                alt="">
-                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/04.jpg"
-                                    data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/04.jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/04.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-4</h6>
                                 <p>Lorem Ipsum</p>
                             </div>
@@ -198,10 +179,8 @@
                     </div>
                     <!--/.portfolio-item-->
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item creative portfolio">
-                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/05.jpg"
-                                alt="">
-                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/05.jpg"
-                                    data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/05.jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/05.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-5</h6>
                                 <p>Lorem Ipsum</p>
                             </div>
@@ -209,10 +188,8 @@
                     </div>
                     <!--/.portfolio-item-->
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate">
-                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/06.jpg"
-                                alt="">
-                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/06.jpg"
-                                    data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/06.jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/06.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-6</h6>
                                 <p>Lorem Ipsum</p>
                             </div>

@@ -24,9 +24,7 @@
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 
     <!--Font-Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Owl-Slider-->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -51,8 +49,7 @@
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -65,13 +62,13 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="Home.html">Home</a></li>
-                            <li class="active"><a class="scroll" href="Services.html">Service</a></li>
-                            <li><a href="Features.html">Features</a></li>
-                            <li><a href="Portfolio.html">Portfolio</a></li>
-                            <li><a href="Team.html">Team</a></li>
-                            <li><a href="Blog.html">Blog</a></li>
-                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="Home.php">Home</a></li>
+                            <li class="active"><a class="scroll" href="Services.php">Service</a></li>
+                            <li><a href="Features.php">Features</a></li>
+                            <li><a href="Portfolio.php">Portfolio</a></li>
+                            <li><a href="Team.php">Team</a></li>
+                            <li><a href="Blog.php">Blog</a></li>
+                            <li><a href="Contact.php">Contact</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -90,13 +87,10 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <p>Lascom is a dynamic software service company that is driven by a passion for solving
-                                    complex
-                                    problems. With a team of highly skilled professionals, they are dedicated to
-                                    developing innovative
-                                    solutions that help businesses and organizations improve their operations, increase
-                                    efficiency, and
-                                    achieve their goals.
+                                <p>
+                                    <?php
+                                    include "db/Paragraph.php";
+                                    ?>
                                 </p>
 
                             </div>
@@ -109,13 +103,10 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <p>Lascom is a dynamic software service company that is driven by a passion for solving
-                                    complex
-                                    problems. With a team of highly skilled professionals, they are dedicated to
-                                    developing innovative
-                                    solutions that help businesses and organizations improve their operations, increase
-                                    efficiency, and
-                                    achieve their goals.
+                                <p>
+                                    <?php
+                                    include "db/Paragraph.php";
+                                    ?>
                                 </p>
 
                             </div>
@@ -123,10 +114,8 @@
                     </div>
                 </div>
 
-                <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i
-                        class="fa fa-angle-left"></i></a>
-                <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i
-                        class="fa fa-angle-right"></i></a>
+                <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
         <!--Service-Section-Start-->
@@ -145,8 +134,7 @@
 
                 <div class="row">
                     <div class="features-sec">
-                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms"
-                            data-wow-delay="0ms">
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
                             <div class="media service-box">
                                 <div class="pull-left"> <i class="fa fa-line-chart"></i> </div>
                                 <div class="media-body">
@@ -159,8 +147,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms"
-                            data-wow-delay="100ms">
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
                             <div class="media service-box">
                                 <div class="pull-left"> <i class="fa fa-cubes"></i> </div>
                                 <div class="media-body">
@@ -173,8 +160,7 @@
                             </div>
                         </div>
                         <!--/.col-md-4-->
-                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms"
-                            data-wow-delay="200ms">
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
                             <div class="media service-box">
                                 <div class="pull-left"> <i class="fa fa-pie-chart"></i> </div>
                                 <div class="media-body">
@@ -187,8 +173,7 @@
                             </div>
                         </div>
                         <!--/.col-md-4-->
-                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms"
-                            data-wow-delay="300ms">
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                             <div class="media service-box">
                                 <div class="pull-left"> <i class="fa fa-bar-chart"></i> </div>
                                 <div class="media-body">
@@ -201,8 +186,7 @@
                             </div>
                         </div>
                         <!--/.col-md-4-->
-                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms"
-                            data-wow-delay="400ms">
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
                             <div class="media service-box">
                                 <div class="pull-left"> <i class="fa fa-language"></i> </div>
                                 <div class="media-body">
@@ -215,8 +199,7 @@
                             </div>
                         </div>
                         <!--/.col-md-4-->
-                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms"
-                            data-wow-delay="500ms">
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
                             <div class="media service-box">
                                 <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
                                 <div class="media-body">
@@ -239,39 +222,32 @@
                             <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <p class="lead">UI & UX</p>
                                 <div class="progress">
-                                    <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="0"
-                                        aria-valuemin="0" aria-valuemax="95" style="width: 90%;"> 90% </div>
+                                    <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="95" style="width: 90%;"> 90% </div>
                                 </div>
                             </div>
                             <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="400ms">
                                 <p class="lead">Marketing</p>
                                 <div class="progress">
-                                    <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="0"
-                                        aria-valuemin="0" aria-valuemax="80" style="width: 80%;"> 80% </div>
+                                    <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="80" style="width: 80%;"> 80% </div>
                                 </div>
                             </div>
                             <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
                                 <p class="lead">SEO Services</p>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out"
-                                        role="progressbar" aria-valuenow="0" aria-valuemin="100" aria-valuemax="60"
-                                        style="width: 60%;"> 60%
+                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="100" aria-valuemax="60" style="width: 60%;"> 60%
                                     </div>
                                 </div>
                             </div>
                             <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="600ms">
                                 <p class="lead">Clean Code</p>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out"
-                                        role="progressbar" aria-valuenow="0" aria-valuemin="100" aria-valuemax="70"
-                                        style="width: 70%;"> 70%
+                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="100" aria-valuemax="70" style="width: 70%;"> 70%
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms"> <img
-                            src="images/Service/01.png" class="img-responsive" alt=""> </div>
+                    <div class="col-sm-6  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms"> <img src="images/Service/01.png" class="img-responsive" alt=""> </div>
                 </div>
             </div>
         </section>

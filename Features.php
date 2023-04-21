@@ -24,9 +24,7 @@
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 
     <!--Font-Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Owl-Slider-->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -51,8 +49,7 @@
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -65,13 +62,13 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="Home.html">Home</a></li>
-                            <li><a href="Services.html">Service</a></li>
-                            <li class="active"><a class="scroll" href="Features.html">Features</a></li>
-                            <li><a href="Portfolio.html">Portfolio</a></li>
-                            <li><a href="Team.html">Team</a></li>
-                            <li><a href="Blog.html">Blog</a></li>
-                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a class="scroll" href="Home.php">Home</a></li>
+                            <li><a href="Services.php">Service</a></li>
+                            <li class="active"><a class="scroll" href="Features.php">Features</a></li>
+                            <li><a href="Portfolio.php">Portfolio</a></li>
+                            <li><a href="Team.php">Team</a></li>
+                            <li><a href="Blog.php">Blog</a></li>
+                            <li><a href="Contact.php">Contact</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -90,13 +87,10 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <p>Lascom is a dynamic software service company that is driven by a passion for solving
-                                    complex
-                                    problems. With a team of highly skilled professionals, they are dedicated to
-                                    developing innovative
-                                    solutions that help businesses and organizations improve their operations, increase
-                                    efficiency, and
-                                    achieve their goals.
+                                <p>
+                                    <?php
+                                    include "db/Paragraph.php";
+                                    ?>
                                 </p>
 
                             </div>
@@ -109,13 +103,10 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <p>Lascom is a dynamic software service company that is driven by a passion for solving
-                                    complex
-                                    problems. With a team of highly skilled professionals, they are dedicated to
-                                    developing innovative
-                                    solutions that help businesses and organizations improve their operations, increase
-                                    efficiency, and
-                                    achieve their goals.
+                                <p>
+                                    <?php
+                                    include "db/Paragraph.php";
+                                    ?>
                                 </p>
 
                             </div>
@@ -123,10 +114,8 @@
                     </div>
                 </div>
 
-                <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i
-                        class="fa fa-angle-left"></i></a>
-                <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i
-                        class="fa fa-angle-right"></i></a>
+                <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
         <!--Features-Section-Start-->
@@ -136,23 +125,18 @@
                     <div class="heading">
                         <h2>AWESOME FEATUR<span>ES</span></h2>
                         <div class="line"></div>
-                        <p><span><strong>L</strong></span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod
-                            tempor incididunt ut
-                            et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <p><span><strong>O</strong></span>ur software platform offers "Awesome Features" like a
+                            customizable interface, advanced search, and real-time collaboration. Work more efficiently
+                            and effectively with our powerful tools.</p>
                     </div>
                 </div>
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#tab-1" role="tab" data-toggle="tab"><i
-                                class="fa fa-paper-plane"></i></a></li>
-                    <li role="presentation"><a href="#tab-2" role="tab" data-toggle="tab"><i
-                                class="fa fa-laptop"></i></a></li>
+                    <li role="presentation" class="active"><a href="#tab-1" role="tab" data-toggle="tab"><i class="fa fa-paper-plane"></i></a></li>
+                    <li role="presentation"><a href="#tab-2" role="tab" data-toggle="tab"><i class="fa fa-laptop"></i></a></li>
                     <li role="presentation"><a href="#tab-3" role="tab" data-toggle="tab"><i class="fa fa-code"></i></a>
                     </li>
-                    <li role="presentation"><a href="#tab-4" role="tab" data-toggle="tab"><i
-                                class="fa fa-th-large"></i></a></li>
-                    <li role="presentation"><a href="#tab-5" role="tab" data-toggle="tab"><i
-                                class="fa fa-file-image-o"></i></a>
+                    <li role="presentation"><a href="#tab-4" role="tab" data-toggle="tab"><i class="fa fa-th-large"></i></a></li>
+                    <li role="presentation"><a href="#tab-5" role="tab" data-toggle="tab"><i class="fa fa-file-image-o"></i></a>
                     </li>
                 </ul>
                 <div class="tab-content">
@@ -161,23 +145,19 @@
                             <h5>Web Design</h5>
                             <div class="line"></div>
                             <div class="clearfix"></div>
-                            <p class="feat-sec">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of
-                                type and scrambled it to make a type specimen book. It has survived not only five
-                                centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                                the 1960s with
-                                the release of Letraset sheets containing<br>
+                            <p class="feat-sec">We understand that a website is the digital
+                                face of a business. It needs to represent the company's values, goals, and mission,
+                                while providing an exceptional user experience to our visitors. That's why we work
+                                closely
+                                with our clients to create a website that's not only visually appealing but also
+                                functional and effective.<br>
                             </p>
-                            <p class="feat-sec-1">Lorem Ipsum passages, and more recently with desktop publishing
-                                software like Aldus
-                                PageMaker including versions of Lorem Ipsum."But I must explain to you how all this
-                                mistaken idea of
-                                denouncing pleasure and praising pain was born and I will give you a complete account of
-                                the system, and
-                                expound </p>
+                            <p class="feat-sec-1">Whether you're looking to improve your website's functionality, update
+                                your branding, or add new features, we've got you covered. In addition to web design, we
+                                also offer a range of related services, including content creation, search engine
+                                optimization (SEO), and website maintenance. Our goal is to help our clients succeed
+                                online, and we'll work tirelessly to ensure that your website stands out from the crowd
+                                and attracts and retains customers.</p>
                         </div>
                         <div class="col-md-6 tab-img"><img src="images/Features/01.jpg" class="img-responsive" alt="">
                         </div>
@@ -187,23 +167,15 @@
                             <h5>Graphic Design</h5>
                             <div class="line"></div>
                             <div class="clearfix"></div>
-                            <p class="feat-sec">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of
-                                type and scrambled it to make a type specimen book. It has survived not only five
-                                centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                                the 1960s with
-                                the release of Letraset sheets containing<br>
+                            <p class="feat-sec">Our team of experienced designers use the latest design tools and
+                                techniques to create custom graphics that reflect each client's unique style and brand
+                                identity. Whether you're looking for a logo, brochure, social media graphics, or other
+                                types of visual content, we've got you covered.<br>
                             </p>
-                            <p class="feat-sec-1">Lorem Ipsum passages, and more recently with desktop publishing
-                                software like Aldus
-                                PageMaker including versions of Lorem Ipsum."But I must explain to you how all this
-                                mistaken idea of
-                                denouncing pleasure and praising pain was born and I will give you a complete account of
-                                the system, and
-                                expound </p>
+                            <p class="feat-sec-1">We work closely with our clients to understand their needs and goals,
+                                and we strive to deliver designs that exceed their expectations. We understand the
+                                importance of creating designs that not only look great but also serve a purpose,
+                                whether it's to attract customers, educate audiences, or build brand awareness.</p>
                         </div>
                         <div class="col-md-6 tab-img"><img src="images/Features/02.jpg" class="img-responsive" alt="">
                         </div>
@@ -323,34 +295,30 @@
                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-6">
-                        <form id="main-contact-form" action="contact.php" name="frmContact" method="post">
+                        <form id="main-contact-form" action="db/contact.php" name="frmContact" method="post">
 
                             <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" name="txtname" class="form-control" placeholder="Name"
-                                            required="required">
+                                        <input type="text" name="txtname" class="form-control" placeholder="Name" required="required">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="email" name="txtmail" class="form-control"
-                                            placeholder="Email Address" required="required">
+                                        <input type="email" name="txtmail" class="form-control" placeholder="Email Address" required="required">
                                     </div>
                                 </div>
 
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="txtsubject" class="form-control" placeholder="Subject"
-                                    required="required">
+                                <input type="text" name="txtsubject" class="form-control" placeholder="Subject" required="required">
                             </div>
 
                             <div class="form-group">
-                                <textarea name="txtmessage" id="message" class="form-control" rows="4"
-                                    placeholder="Enter your message" required="required"></textarea>
+                                <textarea name="txtmessage" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
                             </div>
 
                             <input class="btn btn-primary" name="txtsubmit" type="submit" />
