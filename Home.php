@@ -77,6 +77,7 @@
       </div>
     </div>
   </header>
+
   <!--Slider-Start-->
   <section id="slider">
     <div id="home-carousel" class="carousel slide" data-ride="carousel">
@@ -87,10 +88,26 @@
               <div class="col-md-7 col-sm-12 col-xs-12">
 
                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-
+                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=1'  -->
                 <p>
                   <?php
-                  include "db/Paragraph.php";
+                  //database connection
+                  $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                  // Check connection
+                  if (!$connection) {
+                    die("Connection failed: " . mysqli_connect_error());
+                  }
+
+                  //Fetching text from "paragraph" table
+                  $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 1";
+                  $result = mysqli_query($connection, $sql);
+                  $row = mysqli_fetch_assoc($result);
+                  $content = $row['Content'];
+
+                  echo $content;
+
+                  mysqli_close($connection);
                   ?>
                 </p>
 
@@ -103,11 +120,27 @@
             <div class="row">
               <div class="col-md-7 col-sm-12 col-xs-12">
 
-                <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-
+                <h2> Rooted In Agile ENGINEERING<br>Branching To DIGITAL Excellence</h2>
+                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=2'  -->
                 <p>
                   <?php
-                  include "db/Paragraph.php";
+                  //database connection
+                  $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                  // Check connection
+                  if (!$connection) {
+                    die("Connection failed: " . mysqli_connect_error());
+                  }
+
+                  //Fetching text from "paragraph" table
+                  $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 2";
+                  $result = mysqli_query($connection, $sql);
+                  $row = mysqli_fetch_assoc($result);
+                  $content = $row['Content'];
+
+                  echo $content;
+
+                  mysqli_close($connection);
                   ?>
                 </p>
 
@@ -129,10 +162,29 @@
         <div class="heading">
           <h2>ABOUT <span>US</span></h2>
           <div class="line"></div>
-          <p><span><strong>L</strong></span>ascom is a software service company that specializes in solving complex
-            problems. They are passionate about using innovative technology to help businesses improve their operations
-            and achieve their goals. With their expertise and commitment to customer service, Lascom is a trusted
-            partner for any company looking to stay ahead in today's digital world.</p>
+          <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=3'  -->
+          <p>
+            <?php
+            //database connection
+            $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+            // Check connection
+            if (!$connection) {
+              die("Connection failed: " . mysqli_connect_error());
+            }
+
+            //Fetching text from "paragraph" table
+            $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 3";
+            $result = mysqli_query($connection, $sql);
+            $row = mysqli_fetch_assoc($result);
+            $content = $row['Content'];
+
+            echo $content;
+
+            mysqli_close($connection);
+            ?>
+          </p>
+
         </div>
       </div>
       <div class="row">
@@ -141,11 +193,30 @@
             <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
               <span>W</span>hat keeps us unique?
             </h3>
-            <p><span><strong>W</strong></span>hat sets Lascom apart is their dedication to customer service. They
-              understand that every client has different needs and goals, and they work closely with each one to develop
-              a customized solution that meets their specific requirements. Whether it's providing ongoing support and
-              maintenance or simply being available to answer questions and provide guidance, Lascom is committed to
-              building long-term relationships with their clients based on trust, respect, and exceptional service.</p>
+
+            <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=4'  -->
+            <p>
+              <?php
+              //database connection
+              $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+              // Check connection
+              if (!$connection) {
+                die("Connection failed: " . mysqli_connect_error());
+              }
+
+              //Fetching text from "paragraph" table
+              $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 4";
+              $result = mysqli_query($connection, $sql);
+              $row = mysqli_fetch_assoc($result);
+              $content = $row['Content'];
+
+              echo $content;
+
+              mysqli_close($connection);
+              ?>
+            </p>
+
           </div>
           <div class="col-md-6 ab-sec-img wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms"><img src="images/Aboutus/01.jpg" alt=""> </div>
         </div>
@@ -156,7 +227,7 @@
   <div class="bg-sec">
     <div class="container">
       <div class="col-md-6 col-sm-6 col-xs-6">
-        <a href="Contact.html">
+        <a href="Contact.php">
           <h3 class="hvr-pulse"><u>To know more.......</u></h3>
         </a>
       </div>

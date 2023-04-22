@@ -174,7 +174,7 @@ h1 {
 
 h2 {
 	color: #555;
-	font-size: 35px;
+	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: bolder;
 }
@@ -208,7 +208,7 @@ span {
 }
 
 .space {
-	margin: 30px 0px;
+	margin: 10px 0px;
 }
 
 .line {
@@ -1389,10 +1389,10 @@ textarea.form-control {
 }
 
 .slider-content h2 {
-	font-size: 25px;
+	font-size: 20px;
 	color: #FFFFFF;
 	font-weight: bolder;
-	padding: 10px 0px 20px 0px;
+	padding: 10px 0px 10px 0px;
 }
 
 .slider-content p {

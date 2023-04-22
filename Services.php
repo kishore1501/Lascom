@@ -87,9 +87,26 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
+                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=1'  -->
                                 <p>
                                     <?php
-                                    include "db/Paragraph.php";
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 1";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $content = $row['Content'];
+
+                                    echo $content;
+
+                                    mysqli_close($connection);
                                     ?>
                                 </p>
 
@@ -101,11 +118,27 @@
                     <div class="carousel-caption container">
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
-
-                                <h2>Your Innovation Partner <br> Accelerating Productization</h2>
+                                <h2> Rooted In Agile ENGINEERING<br>Branching To DIGITAL Excellence</h2>
+                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=2'  -->
                                 <p>
                                     <?php
-                                    include "db/Paragraph.php";
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 2";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $content = $row['Content'];
+
+                                    echo $content;
+
+                                    mysqli_close($connection);
                                     ?>
                                 </p>
 
@@ -126,9 +159,28 @@
                     <div class="heading">
                         <h2>OUR SERVIC<span>E</span></h2>
                         <div class="line"></div>
-                        <p><span><strong>W</strong></span>e provides a range of software services to help businesses and
-                            organizations
-                            improve their operations, increase efficiency, and achieve their goals. </p>
+                        <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=5'  -->
+                        <p>
+                            <?php
+                            //database connection
+                            $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                            // Check connection
+                            if (!$connection) {
+                                die("Connection failed: " . mysqli_connect_error());
+                            }
+
+                            //Fetching text from "paragraph" table
+                            $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 5";
+                            $result = mysqli_query($connection, $sql);
+                            $row = mysqli_fetch_assoc($result);
+                            $content = $row['Content'];
+
+                            echo $content;
+
+                            mysqli_close($connection);
+                            ?>
+                        </p>
                     </div>
                 </div>
 
@@ -139,10 +191,28 @@
                                 <div class="pull-left"> <i class="fa fa-line-chart"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">UX Design</h5>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open
-                                        platform
-                                        that fosters
-                                        greater</p>
+                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=6'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 6";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $content = $row['Content'];
+
+                                        echo $content;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -152,10 +222,28 @@
                                 <div class="pull-left"> <i class="fa fa-cubes"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">UI Design</h5>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open
-                                        platform
-                                        that fosters
-                                        greater</p>
+                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=7'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 7";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $content = $row['Content'];
+
+                                        echo $content;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -165,10 +253,28 @@
                                 <div class="pull-left"> <i class="fa fa-pie-chart"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">Marketing</h5>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open
-                                        platform
-                                        that fosters
-                                        greater</p>
+                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=8'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 8";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $content = $row['Content'];
+
+                                        echo $content;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -178,10 +284,28 @@
                                 <div class="pull-left"> <i class="fa fa-bar-chart"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">SEO Services</h5>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open
-                                        platform
-                                        that fosters
-                                        greater</p>
+                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=9'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 9";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $content = $row['Content'];
+
+                                        echo $content;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -191,10 +315,28 @@
                                 <div class="pull-left"> <i class="fa fa-language"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">Android App</h5>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open
-                                        platform
-                                        that fosters
-                                        greater</p>
+                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=10'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 10";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $content = $row['Content'];
+
+                                        echo $content;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -204,10 +346,28 @@
                                 <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">Clean Code</h5>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open
-                                        platform
-                                        that fosters
-                                        greater</p>
+                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=11'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 11";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $content = $row['Content'];
+
+                                        echo $content;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
