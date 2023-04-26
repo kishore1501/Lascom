@@ -86,9 +86,26 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
+                                <!-- Getting Content from 'homepage' table in 'lascomdb' and 'id=6'  -->
                                 <p>
                                     <?php
-                                    include "db/Paragraph.php";
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Paragraph FROM homepage WHERE id = 6";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $Paragraph = $row['Paragraph'];
+
+                                    echo $Paragraph;
+
+                                    mysqli_close($connection);
                                     ?>
                                 </p>
 
@@ -101,12 +118,30 @@
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
-                                <h2>Your Innovation Partner <br> Accelerating Productization</h2>
+                                <h2> Rooted In Agile ENGINEERING</h2>
+                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=2'  -->
                                 <p>
                                     <?php
-                                    include "db/Paragraph.php";
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 2";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $content = $row['Content'];
+
+                                    echo $content;
+
+                                    mysqli_close($connection);
                                     ?>
                                 </p>
+
 
                             </div>
                         </div>
@@ -126,9 +161,29 @@
                 <div class="heading">
                     <h2>CONTACT <span>US</span></h2>
                     <div class="line"></div>
-                    <p><span><strong>I</strong></span>f you have any questions, comments, or would like to learn more
-                        about
-                        Lascom's services, please don't hesitate to get in touch.</p>
+                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=13'  -->
+                    <p>
+                        <?php
+                        //database connection
+                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                        // Check connection
+                        if (!$connection) {
+                            die("Connection failed: " . mysqli_connect_error());
+                        }
+
+                        //Fetching text from "paragraph" table
+                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 13";
+                        $result = mysqli_query($connection, $sql);
+                        $row = mysqli_fetch_assoc($result);
+                        $content = $row['Content'];
+
+                        echo $content;
+
+                        mysqli_close($connection);
+                        ?>
+                    </p>
+
                 </div>
             </div>
             <div class="text-center">
@@ -136,9 +191,28 @@
                     <h4>CONTACT IN<span>FO</span></h4>
                     <ul class="contact-form">
                         <li><i class="fa fa-map-marker"></i>
-                            <h6><strong>Address:</strong> No.1, Jawaharlal Nehru Road, (100 Feet Road, Near Vadapalani
-                                Signal),
-                                Vadapalani, Chennai, Tamil Nadu 600026 </h6>
+                            <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=14'  -->
+                            <h6>
+                                <?php
+                                //database connection
+                                $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                // Check connection
+                                if (!$connection) {
+                                    die("Connection failed: " . mysqli_connect_error());
+                                }
+
+                                //Fetching text from "paragraph" table
+                                $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 14";
+                                $result = mysqli_query($connection, $sql);
+                                $row = mysqli_fetch_assoc($result);
+                                $content = $row['Content'];
+
+                                echo $content;
+
+                                mysqli_close($connection);
+                                ?>
+                            </h6>
                         </li>
                         <li><i class="fa fa-envelope"></i>
                             <h6><strong>Mail Us:</strong> <a href="#">Lascom@gmail.com</a></h6>

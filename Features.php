@@ -87,7 +87,8 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=1'  -->
+
+                                <!-- Getting Content from 'featurespage' table in 'lascomdb' and 'id=1'  -->
                                 <p>
                                     <?php
                                     //database connection
@@ -99,12 +100,12 @@
                                     }
 
                                     //Fetching text from "paragraph" table
-                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 1";
+                                    $sql = "SELECT Paragraph FROM featurespage WHERE id = 1";
                                     $result = mysqli_query($connection, $sql);
                                     $row = mysqli_fetch_assoc($result);
-                                    $content = $row['Content'];
+                                    $Paragraph = $row['Paragraph'];
 
-                                    echo $content;
+                                    echo $Paragraph;
 
                                     mysqli_close($connection);
                                     ?>
@@ -119,8 +120,8 @@
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
-                                <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=2'  -->
+                                <h2> Rooted In Agile ENGINEERING</h2>
+                                <!-- Getting Content from 'featurespage' table in 'lascomdb' and 'id=2'  -->
                                 <p>
                                     <?php
                                     //database connection
@@ -132,16 +133,17 @@
                                     }
 
                                     //Fetching text from "paragraph" table
-                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 2";
+                                    $sql = "SELECT Paragraph FROM featurespage WHERE id = 2";
                                     $result = mysqli_query($connection, $sql);
                                     $row = mysqli_fetch_assoc($result);
-                                    $content = $row['Content'];
+                                    $Paragraph = $row['Paragraph'];
 
-                                    echo $content;
+                                    echo $Paragraph;
 
                                     mysqli_close($connection);
                                     ?>
                                 </p>
+
 
                             </div>
                         </div>
@@ -159,9 +161,29 @@
                     <div class="heading">
                         <h2>AWESOME FEATUR<span>ES</span></h2>
                         <div class="line"></div>
-                        <p><span><strong>O</strong></span>ur software platform offers "Awesome Features" like a
-                            customizable interface, advanced search, and real-time collaboration. Work more efficiently
-                            and effectively with our powerful tools.</p>
+                        <!-- Getting Content from 'featurespage' table in 'lascomdb' and 'id=3'  -->
+                        <p>
+                            <?php
+                            //database connection
+                            $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                            // Check connection
+                            if (!$connection) {
+                                die("Connection failed: " . mysqli_connect_error());
+                            }
+
+                            //Fetching text from "paragraph" table
+                            $sql = "SELECT Paragraph FROM featurespage WHERE id = 3";
+                            $result = mysqli_query($connection, $sql);
+                            $row = mysqli_fetch_assoc($result);
+                            $Paragraph = $row['Paragraph'];
+
+                            echo $Paragraph;
+
+                            mysqli_close($connection);
+                            ?>
+                        </p>
+
                     </div>
                 </div>
                 <ul class="nav nav-tabs" role="tablist">
@@ -179,19 +201,28 @@
                             <h5>Web Design</h5>
                             <div class="line"></div>
                             <div class="clearfix"></div>
-                            <p class="feat-sec">We understand that a website is the digital
-                                face of a business. It needs to represent the company's values, goals, and mission,
-                                while providing an exceptional user experience to our visitors. That's why we work
-                                closely
-                                with our clients to create a website that's not only visually appealing but also
-                                functional and effective.<br>
+                            <!-- Getting Content from 'featurespage' table in 'lascomdb' and 'id=4'  -->
+                            <p>
+                                <?php
+                                //database connection
+                                $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                // Check connection
+                                if (!$connection) {
+                                    die("Connection failed: " . mysqli_connect_error());
+                                }
+
+                                //Fetching text from "paragraph" table
+                                $sql = "SELECT Paragraph FROM featurespage WHERE id = 4";
+                                $result = mysqli_query($connection, $sql);
+                                $row = mysqli_fetch_assoc($result);
+                                $Paragraph = $row['Paragraph'];
+
+                                echo $Paragraph;
+
+                                mysqli_close($connection);
+                                ?>
                             </p>
-                            <p class="feat-sec-1">Whether you're looking to improve your website's functionality, update
-                                your branding, or add new features, we've got you covered. In addition to web design, we
-                                also offer a range of related services, including content creation, search engine
-                                optimization (SEO), and website maintenance. Our goal is to help our clients succeed
-                                online, and we'll work tirelessly to ensure that your website stands out from the crowd
-                                and attracts and retains customers.</p>
                         </div>
                         <div class="col-md-6 tab-img"><img src="images/Features/01.jpg" class="img-responsive" alt="">
                         </div>
@@ -201,15 +232,30 @@
                             <h5>Graphic Design</h5>
                             <div class="line"></div>
                             <div class="clearfix"></div>
-                            <p class="feat-sec">Our team of experienced designers use the latest design tools and
-                                techniques to create custom graphics that reflect each client's unique style and brand
-                                identity. Whether you're looking for a logo, brochure, social media graphics, or other
-                                types of visual content, we've got you covered.<br>
+                            <!-- Getting Content from 'featurespage' table in 'lascomdb' and 'id=5'  -->
+                            <p>
+                                <?php
+                                //database connection
+                                $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                // Check connection
+                                if (!$connection) {
+                                    die("Connection failed: " . mysqli_connect_error());
+                                }
+
+                                //Fetching text from "paragraph" table
+                                $sql = "SELECT Paragraph FROM featurespage WHERE id = 5";
+                                $result = mysqli_query($connection, $sql);
+                                $row = mysqli_fetch_assoc($result);
+                                $Paragraph = $row['Paragraph'];
+
+                                echo $Paragraph;
+
+                                mysqli_close($connection);
+                                ?>
                             </p>
-                            <p class="feat-sec-1">We work closely with our clients to understand their needs and goals,
-                                and we strive to deliver designs that exceed their expectations. We understand the
-                                importance of creating designs that not only look great but also serve a purpose,
-                                whether it's to attract customers, educate audiences, or build brand awareness.</p>
+
+
                         </div>
                         <div class="col-md-6 tab-img"><img src="images/Features/02.jpg" class="img-responsive" alt="">
                         </div>
@@ -219,23 +265,29 @@
                             <h5>Web Development</h5>
                             <div class="line"></div>
                             <div class="clearfix"></div>
-                            <p class="feat-sec">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of
-                                type and scrambled it to make a type specimen book. It has survived not only five
-                                centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                                the 1960s with
-                                the release of Letraset sheets containing<br>
+                            <!-- Getting Content from 'featurespage' table in 'lascomdb' and 'id=6'  -->
+                            <p>
+                                <?php
+                                //database connection
+                                $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                // Check connection
+                                if (!$connection) {
+                                    die("Connection failed: " . mysqli_connect_error());
+                                }
+
+                                //Fetching text from "paragraph" table
+                                $sql = "SELECT Paragraph FROM featurespage WHERE id = 6";
+                                $result = mysqli_query($connection, $sql);
+                                $row = mysqli_fetch_assoc($result);
+                                $Paragraph = $row['Paragraph'];
+
+                                echo $Paragraph;
+
+                                mysqli_close($connection);
+                                ?>
                             </p>
-                            <p class="feat-sec-1">Lorem Ipsum passages, and more recently with desktop publishing
-                                software like Aldus
-                                PageMaker including versions of Lorem Ipsum."But I must explain to you how all this
-                                mistaken idea of
-                                denouncing pleasure and praising pain was born and I will give you a complete account of
-                                the system, and
-                                expound </p>
+
                         </div>
                         <div class="col-md-6 tab-img"><img src="images/Features/03.jpg" class="img-responsive" alt="">
                         </div>
@@ -245,23 +297,29 @@
                             <h5>Responsive Design</h5>
                             <div class="line"></div>
                             <div class="clearfix"></div>
-                            <p class="feat-sec">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of
-                                type and scrambled it to make a type specimen book. It has survived not only five
-                                centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                                the 1960s with
-                                the release of Letraset sheets containing<br>
+                            <!-- Getting Content from 'featurespage' table in 'lascomdb' and 'id=7'  -->
+                            <p>
+                                <?php
+                                //database connection
+                                $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                // Check connection
+                                if (!$connection) {
+                                    die("Connection failed: " . mysqli_connect_error());
+                                }
+
+                                //Fetching text from "paragraph" table
+                                $sql = "SELECT Paragraph FROM featurespage WHERE id = 7";
+                                $result = mysqli_query($connection, $sql);
+                                $row = mysqli_fetch_assoc($result);
+                                $Paragraph = $row['Paragraph'];
+
+                                echo $Paragraph;
+
+                                mysqli_close($connection);
+                                ?>
                             </p>
-                            <p class="feat-sec-1">Lorem Ipsum passages, and more recently with desktop publishing
-                                software like Aldus
-                                PageMaker including versions of Lorem Ipsum."But I must explain to you how all this
-                                mistaken idea of
-                                denouncing pleasure and praising pain was born and I will give you a complete account of
-                                the system, and
-                                expound </p>
+
                         </div>
                         <div class="col-md-6 tab-img"><img src="images/Features/04.jpg" class="img-responsive" alt="">
                         </div>
@@ -271,23 +329,29 @@
                             <h5>Creative Gallery</h5>
                             <div class="line"></div>
                             <div class="clearfix"></div>
-                            <p class="feat-sec">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of
-                                type and scrambled it to make a type specimen book. It has survived not only five
-                                centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                                the 1960s with
-                                the release of Letraset sheets containing<br>
+                            <!-- Getting Content from 'featurespage' table in 'lascomdb' and 'id=8'  -->
+                            <p>
+                                <?php
+                                //database connection
+                                $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                // Check connection
+                                if (!$connection) {
+                                    die("Connection failed: " . mysqli_connect_error());
+                                }
+
+                                //Fetching text from "paragraph" table
+                                $sql = "SELECT Paragraph FROM featurespage WHERE id = 8";
+                                $result = mysqli_query($connection, $sql);
+                                $row = mysqli_fetch_assoc($result);
+                                $Paragraph = $row['Paragraph'];
+
+                                echo $Paragraph;
+
+                                mysqli_close($connection);
+                                ?>
                             </p>
-                            <p class="feat-sec-1">Lorem Ipsum passages, and more recently with desktop publishing
-                                software like Aldus
-                                PageMaker including versions of Lorem Ipsum."But I must explain to you how all this
-                                mistaken idea of
-                                denouncing pleasure and praising pain was born and I will give you a complete account of
-                                the system, and
-                                expound </p>
+
                         </div>
                         <div class="col-md-6 tab-img"><img src="images/Features/05.jpg" class="img-responsive" alt="">
                         </div>
@@ -303,9 +367,30 @@
                     <div class="heading">
                         <h2>CONTACT <span>US</span></h2>
                         <div class="line"></div>
-                        <p><span><strong>I</strong></span>f you have any questions, comments, or would like to learn
-                            more about
-                            Lascom's services, please don't hesitate to get in touch.</p>
+                        <!-- Getting Content from 'featurespage' table in 'lascomdb' and 'id=9'  -->
+                        <p>
+                            <?php
+                            //database connection
+                            $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                            // Check connection
+                            if (!$connection) {
+                                die("Connection failed: " . mysqli_connect_error());
+                            }
+
+                            //Fetching text from "paragraph" table
+                            $sql = "SELECT Paragraph FROM featurespage WHERE id = 9";
+                            $result = mysqli_query($connection, $sql);
+                            $row = mysqli_fetch_assoc($result);
+                            $Paragraph = $row['Paragraph'];
+
+                            echo $Paragraph;
+
+                            mysqli_close($connection);
+                            ?>
+                        </p>
+
+
                     </div>
                 </div>
                 <div class="text-center">
@@ -313,9 +398,28 @@
                         <h4>CONTACT IN<span>FO</span></h4>
                         <ul class="contact-form">
                             <li><i class="fa fa-map-marker"></i>
-                                <h6><strong>Address:</strong> No.1, Jawaharlal Nehru Road, (100 Feet Road, Near
-                                    Vadapalani Signal),
-                                    Vadapalani, Chennai, Tamil Nadu 600026 </h6>
+                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=14'  -->
+                                <h6>
+                                    <?php
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 14";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $content = $row['Content'];
+
+                                    echo $content;
+
+                                    mysqli_close($connection);
+                                    ?>
+                                </h6>
                             </li>
                             <li><i class="fa fa-envelope"></i>
                                 <h6><strong>Mail Us:</strong> <a href="#">Lascom@gmail.com</a></h6>
@@ -329,7 +433,7 @@
                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-6">
-                        <form id="main-contact-form" action="db/contact.php" name="frmContact" method="post">
+                        <form id="main-contact-form" action="Contact.php" name="frmContact" method="post">
 
                             <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 

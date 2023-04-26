@@ -87,12 +87,28 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
+                                <!-- Getting Content from 'portfoliopage' table in 'lascomdb' and 'id=2'  -->
                                 <p>
                                     <?php
-                                    include "db/Paragraph.php";
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Paragraph FROM portfoliopage WHERE id = 2";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $Paragraph = $row['Paragraph'];
+
+                                    echo $Paragraph;
+
+                                    mysqli_close($connection);
                                     ?>
                                 </p>
-
                             </div>
                         </div>
                     </div>
@@ -102,10 +118,27 @@
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
-                                <h2>Your Innovation Partner <br> Accelerating Productization</h2>
+                                <h2> Rooted In Agile ENGINEERING</h2>
+                                <!-- Getting Content from 'portfoliopage' table in 'lascomdb' and 'id=3'  -->
                                 <p>
                                     <?php
-                                    include "db/Paragraph.php";
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Paragraph FROM portfoliopage WHERE id = 3";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $Paragraph = $row['Paragraph'];
+
+                                    echo $Paragraph;
+
+                                    mysqli_close($connection);
                                     ?>
                                 </p>
 
@@ -126,15 +159,34 @@
                     <div class="heading">
                         <h2>O<span>UR</span> Industri<span>ES</span></h2>
                         <div class="line"></div>
-                        <p><span><strong>L</strong></span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod
-                            tempor incididunt ut
-                            et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <!-- Getting Content from 'portfoliopage' table in 'lascomdb' and 'id=1'  -->
+                        <p>
+                            <?php
+                            //database connection
+                            $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                            // Check connection
+                            if (!$connection) {
+                                die("Connection failed: " . mysqli_connect_error());
+                            }
+
+                            //Fetching text from "paragraph" table
+                            $sql = "SELECT Paragraph FROM portfoliopage WHERE id = 1";
+                            $result = mysqli_query($connection, $sql);
+                            $row = mysqli_fetch_assoc($result);
+                            $Paragraph = $row['Paragraph'];
+
+                            echo $Paragraph;
+
+                            mysqli_close($connection);
+                            ?>
+                        </p>
                     </div>
                 </div>
                 <div class="text-center">
                     <ul class="portfolio-filter">
-                        <li><a class="active" href="#" data-filter="*">Universities</a></li>
+                        <li><a class="active" href="#" data-filter="*">All</a></li>
+                        <li><a href="#" data-filter=".corporate">Universities</a></li>
                         <li><a href="#" data-filter=".creative">Cements</a></li>
                         <li><a href="#" data-filter=".corporate">Construction</a></li>
                         <li><a href="#" data-filter=".portfolio">Train</a></li>
@@ -143,7 +195,7 @@
                 </div>
                 <div class="portfolio-items">
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item creative">
-                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/01.jpg" alt="">
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Cements(1).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/01.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-1</h6>
                                 <p>Lorem Ipsum</p>
@@ -152,8 +204,8 @@
                     </div>
                     <!--/.portfolio-item-->
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate portfolio">
-                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/02.jpg" alt="">
-                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/02.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-University(1).jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-University(1).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-2</h6>
                                 <p>Lorem Ipsum</p>
                             </div>
@@ -170,7 +222,7 @@
                     </div>
                     <!--/.portfolio-item-->
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate">
-                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/04.jpg" alt="">
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-University(2).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/04.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-4</h6>
                                 <p>Lorem Ipsum</p>
@@ -188,8 +240,8 @@
                     </div>
                     <!--/.portfolio-item-->
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate">
-                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/06.jpg" alt="">
-                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/06.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-University(3).jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-University(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-6</h6>
                                 <p>Lorem Ipsum</p>
                             </div>

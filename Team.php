@@ -87,9 +87,27 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
+
+                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=1'  -->
                                 <p>
                                     <?php
-                                    include "db/Paragraph.php";
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 1";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $content = $row['Content'];
+
+                                    echo $content;
+
+                                    mysqli_close($connection);
                                     ?>
                                 </p>
 
@@ -103,9 +121,26 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
+                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=2'  -->
                                 <p>
                                     <?php
-                                    include "db/Paragraph.php";
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 2";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $content = $row['Content'];
+
+                                    echo $content;
+
+                                    mysqli_close($connection);
                                     ?>
                                 </p>
 
@@ -129,6 +164,7 @@
                             typesetting industry</p>
                     </div>
                 </div>
+
                 <!-- #1 -->
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".1s">
@@ -147,10 +183,11 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- #2 -->
                     <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <div class="team-sec">
-                            <div class="team-img"> <img src="images/Team/Chairman.jpg" class="img-responsive" alt="">
+                            <div class="team-img"> <img src=" " class="img-responsive" alt="executive director">
                                 <div class="team-desc">
                                     <h5>Dr. Ananda Krishnan DS</h5>
                                     <p>Our executive director</p>
@@ -163,13 +200,14 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- #3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="team-sec">
-                            <div class="team-img"> <img src="images/Team/Chairman.jpg" class="img-responsive" alt="">
+                            <div class="team-img"> <img src="images/Team/HeadIT.jpg" class="img-responsive" alt="">
                                 <div class="team-desc">
-                                    <h5>Mr. Parthiban</h5>
-                                    <p>Assistant General Manager, IT</p>
+                                    <h5>Rajesh Krishnamurthi </h5>
+                                    <p>Head IT</p>
                                     <ul class="team-social-icon">
                                         <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
                                         <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
@@ -179,13 +217,14 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- #4 -->
-                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
                         <div class="team-sec">
-                            <div class="team-img"> <img src="images/Team/Chairman.jpg" class="img-responsive" alt="">
+                            <div class="team-img"> <img src="" class="img-responsive" alt="AGM-IT">
                                 <div class="team-desc">
-                                    <h5>Rajesh Krishnamurthi </h5>
-                                    <p>Head IT</p>
+                                    <h5>Mr. Parthiban</h5>
+                                    <p>Assistant General Manager, IT</p>
                                     <ul class="team-social-icon">
                                         <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
                                         <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
@@ -208,19 +247,22 @@
                     <div id="owl-testi" class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/02.jpg" class="img-circle" alt="">
-                                <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
+                                <h5>Thank you for the recognition and bonus for the hard work I put in on the last project.
+                                    It means a lot to me to know that my contributions are valued</h5>
                                 <h6>Kishore</h6>
                                 <p>Web Developer</p>
                             </div>
                         </div>
                         <div class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/03.jpg" class="img-circle" alt="">
-                            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
+                            <h5>I really appreciate the flexibility the company offers in terms of scheduling and telecommuting.
+                                It allows me to better balance my work and personal life.</h5>
                             <h6>Nadim Khan</h6>
                             <p>Web Designer</p>
                         </div>
                         <div class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/04.jpg" class="img-circle" alt="">
-                            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
-                            <h6>John Hood</h6>
+                            <h5>I'm grateful for the training opportunities the company has provided me.
+                                It's helped me grow in my career and feel more confident in my role.</h5>
+                            <h6>Rosia</h6>
                             <p>CEO</p>
                         </div>
                     </div>

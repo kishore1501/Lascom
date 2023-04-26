@@ -120,7 +120,7 @@
             <div class="row">
               <div class="col-md-7 col-sm-12 col-xs-12">
 
-                <h2> Rooted In Agile ENGINEERING<br>Branching To DIGITAL Excellence</h2>
+                <h2> Rooted In Agile ENGINEERING</h2>
                 <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=2'  -->
                 <p>
                   <?php
@@ -162,7 +162,7 @@
         <div class="heading">
           <h2>ABOUT <span>US</span></h2>
           <div class="line"></div>
-          <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=3'  -->
+          <!-- Getting Content from 'homepage' table in 'lascomdb' and 'id=4'  -->
           <p>
             <?php
             //database connection
@@ -174,12 +174,12 @@
             }
 
             //Fetching text from "paragraph" table
-            $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 3";
+            $sql = "SELECT Paragraph FROM homepage WHERE id = 4";
             $result = mysqli_query($connection, $sql);
             $row = mysqli_fetch_assoc($result);
-            $content = $row['Content'];
+            $Paragraph = $row['Paragraph'];
 
-            echo $content;
+            echo $Paragraph;
 
             mysqli_close($connection);
             ?>
@@ -194,7 +194,7 @@
               <span>W</span>hat keeps us unique?
             </h3>
 
-            <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=4'  -->
+            <!-- Getting Content from 'homepage' table in 'lascomdb' and 'id=6'  -->
             <p>
               <?php
               //database connection
@@ -206,12 +206,12 @@
               }
 
               //Fetching text from "paragraph" table
-              $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 4";
+              $sql = "SELECT Paragraph FROM homepage WHERE id = 6";
               $result = mysqli_query($connection, $sql);
               $row = mysqli_fetch_assoc($result);
-              $content = $row['Content'];
+              $Paragraph = $row['Paragraph'];
 
-              echo $content;
+              echo $Paragraph;
 
               mysqli_close($connection);
               ?>
@@ -227,8 +227,9 @@
   <div class="bg-sec">
     <div class="container">
       <div class="col-md-6 col-sm-6 col-xs-6">
-        <a href="Contact.php">
-          <h3 class="hvr-pulse"><u>To know more.......</u></h3>
+        <a href="/Contact.php">
+          <h3 class="hvr-pulse"><u>To know more please contact us.</u></h3>
+
         </a>
       </div>
     </div>

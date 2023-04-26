@@ -87,7 +87,7 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=1'  -->
+                                <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=1'  -->
                                 <p>
                                     <?php
                                     //database connection
@@ -99,12 +99,12 @@
                                     }
 
                                     //Fetching text from "paragraph" table
-                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 1";
+                                    $sql = "SELECT Paragraph FROM servicepage WHERE id = 1";
                                     $result = mysqli_query($connection, $sql);
                                     $row = mysqli_fetch_assoc($result);
-                                    $content = $row['Content'];
+                                    $Paragraph = $row['Paragraph'];
 
-                                    echo $content;
+                                    echo $Paragraph;
 
                                     mysqli_close($connection);
                                     ?>
@@ -118,8 +118,8 @@
                     <div class="carousel-caption container">
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
-                                <h2> Rooted In Agile ENGINEERING<br>Branching To DIGITAL Excellence</h2>
-                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=2'  -->
+                                <h2> Rooted In Agile ENGINEERING</h2>
+                                <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=2'  -->
                                 <p>
                                     <?php
                                     //database connection
@@ -131,12 +131,12 @@
                                     }
 
                                     //Fetching text from "paragraph" table
-                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 2";
+                                    $sql = "SELECT Paragraph FROM servicepage WHERE id = 2";
                                     $result = mysqli_query($connection, $sql);
                                     $row = mysqli_fetch_assoc($result);
-                                    $content = $row['Content'];
+                                    $Paragraph = $row['Paragraph'];
 
-                                    echo $content;
+                                    echo $Paragraph;
 
                                     mysqli_close($connection);
                                     ?>
@@ -159,7 +159,7 @@
                     <div class="heading">
                         <h2>OUR SERVIC<span>E</span></h2>
                         <div class="line"></div>
-                        <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=5'  -->
+                        <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=3'  -->
                         <p>
                             <?php
                             //database connection
@@ -171,12 +171,12 @@
                             }
 
                             //Fetching text from "paragraph" table
-                            $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 5";
+                            $sql = "SELECT Paragraph FROM servicepage WHERE id = 3";
                             $result = mysqli_query($connection, $sql);
                             $row = mysqli_fetch_assoc($result);
-                            $content = $row['Content'];
+                            $Paragraph = $row['Paragraph'];
 
-                            echo $content;
+                            echo $Paragraph;
 
                             mysqli_close($connection);
                             ?>
@@ -191,7 +191,7 @@
                                 <div class="pull-left"> <i class="fa fa-line-chart"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">UX Design</h5>
-                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=6'  -->
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=4'  -->
                                     <p>
                                         <?php
                                         //database connection
@@ -203,12 +203,12 @@
                                         }
 
                                         //Fetching text from "paragraph" table
-                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 6";
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 4";
                                         $result = mysqli_query($connection, $sql);
                                         $row = mysqli_fetch_assoc($result);
-                                        $content = $row['Content'];
+                                        $Paragraph = $row['Paragraph'];
 
-                                        echo $content;
+                                        echo $Paragraph;
 
                                         mysqli_close($connection);
                                         ?>
@@ -222,7 +222,7 @@
                                 <div class="pull-left"> <i class="fa fa-cubes"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">UI Design</h5>
-                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=7'  -->
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=5'  -->
                                     <p>
                                         <?php
                                         //database connection
@@ -234,12 +234,12 @@
                                         }
 
                                         //Fetching text from "paragraph" table
-                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 7";
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 5";
                                         $result = mysqli_query($connection, $sql);
                                         $row = mysqli_fetch_assoc($result);
-                                        $content = $row['Content'];
+                                        $Paragraph = $row['Paragraph'];
 
-                                        echo $content;
+                                        echo $Paragraph;
 
                                         mysqli_close($connection);
                                         ?>
@@ -253,7 +253,7 @@
                                 <div class="pull-left"> <i class="fa fa-pie-chart"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">Marketing</h5>
-                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=8'  -->
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=5'  -->
                                     <p>
                                         <?php
                                         //database connection
@@ -265,12 +265,12 @@
                                         }
 
                                         //Fetching text from "paragraph" table
-                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 8";
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 5";
                                         $result = mysqli_query($connection, $sql);
                                         $row = mysqli_fetch_assoc($result);
-                                        $content = $row['Content'];
+                                        $Paragraph = $row['Paragraph'];
 
-                                        echo $content;
+                                        echo $Paragraph;
 
                                         mysqli_close($connection);
                                         ?>
@@ -284,7 +284,7 @@
                                 <div class="pull-left"> <i class="fa fa-bar-chart"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">SEO Services</h5>
-                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=9'  -->
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=6'  -->
                                     <p>
                                         <?php
                                         //database connection
@@ -296,12 +296,12 @@
                                         }
 
                                         //Fetching text from "paragraph" table
-                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 9";
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 6";
                                         $result = mysqli_query($connection, $sql);
                                         $row = mysqli_fetch_assoc($result);
-                                        $content = $row['Content'];
+                                        $Paragraph = $row['Paragraph'];
 
-                                        echo $content;
+                                        echo $Paragraph;
 
                                         mysqli_close($connection);
                                         ?>
@@ -315,7 +315,7 @@
                                 <div class="pull-left"> <i class="fa fa-language"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">Android App</h5>
-                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=10'  -->
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=7'  -->
                                     <p>
                                         <?php
                                         //database connection
@@ -327,12 +327,12 @@
                                         }
 
                                         //Fetching text from "paragraph" table
-                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 10";
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 7";
                                         $result = mysqli_query($connection, $sql);
                                         $row = mysqli_fetch_assoc($result);
-                                        $content = $row['Content'];
+                                        $Paragraph = $row['Paragraph'];
 
-                                        echo $content;
+                                        echo $Paragraph;
 
                                         mysqli_close($connection);
                                         ?>
@@ -346,7 +346,7 @@
                                 <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
                                 <div class="media-body">
                                     <h5 class="media-heading">Clean Code</h5>
-                                    <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=11'  -->
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=8'  -->
                                     <p>
                                         <?php
                                         //database connection
@@ -358,12 +358,12 @@
                                         }
 
                                         //Fetching text from "paragraph" table
-                                        $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 11";
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 8";
                                         $result = mysqli_query($connection, $sql);
                                         $row = mysqli_fetch_assoc($result);
-                                        $content = $row['Content'];
+                                        $Paragraph = $row['Paragraph'];
 
-                                        echo $content;
+                                        echo $Paragraph;
 
                                         mysqli_close($connection);
                                         ?>

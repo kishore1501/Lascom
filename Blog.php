@@ -86,9 +86,26 @@
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
                                 <h2>Your Innovation Partner <br> Accelerating Productization</h2>
+                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=1'  -->
                                 <p>
                                     <?php
-                                    include "db/Paragraph.php";
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 1";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $content = $row['Content'];
+
+                                    echo $content;
+
+                                    mysqli_close($connection);
                                     ?>
                                 </p>
 
@@ -101,14 +118,28 @@
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
 
-                                <h2>Your Innovation Partner <br> Accelerating Productization</h2>
-                                <p>Lascom is a dynamic software service company that is driven by a passion for solving
-                                    complex
-                                    problems. With a team of highly skilled professionals, they are dedicated to
-                                    developing innovative
-                                    solutions that help businesses and organizations improve their operations, increase
-                                    efficiency, and
-                                    achieve their goals.
+                                <h2> Rooted In Agile ENGINEERING</h2>
+                                <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=2'  -->
+                                <p>
+                                    <?php
+                                    //database connection
+                                    $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                    // Check connection
+                                    if (!$connection) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
+
+                                    //Fetching text from "paragraph" table
+                                    $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 2";
+                                    $result = mysqli_query($connection, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    $content = $row['Content'];
+
+                                    echo $content;
+
+                                    mysqli_close($connection);
+                                    ?>
                                 </p>
 
                             </div>
@@ -141,7 +172,7 @@
                                 <strong>15</strong><br>
                                 2023
                             </div>
-                            <a href="#">
+                            <a href="https://www.accenture.com/us-en/insights/digital-transformation-index">
                                 <h5>Impact of Digital Transformation in Food and Beverage Industries</h5>
                             </a>
                             <ul class="blog-icon">
