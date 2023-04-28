@@ -223,37 +223,115 @@
       </div>
     </div>
   </section>
-  <!--About-Sec-2-Start-->
-  <div class="bg-sec">
+  <!--Contact-Section-Start-->
+  <section id="contact">
     <div class="container">
-      <div class="col-md-6 col-sm-6 col-xs-6">
-        <a href="Contact.php">
-          <h3 class="hvr-pulse"><u>To know more please contact us.</u></h3>
-        </a>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="heading">
+          <h2>CONTACT <span>US</span></h2>
+          <div class="line"></div>
+          <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=13'  -->
+          <p>
+            <?php
+            //database connection
+            $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+            // Check connection
+            if (!$connection) {
+              die("Connection failed: " . mysqli_connect_error());
+            }
+
+            //Fetching text from "paragraph" table
+            $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 13";
+            $result = mysqli_query($connection, $sql);
+            $row = mysqli_fetch_assoc($result);
+            $content = $row['Content'];
+
+            echo $content;
+
+            mysqli_close($connection);
+            ?>
+          </p>
+
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="col-md-6 col-sm-6 contact-sec-1">
+          <h4>CONTACT IN<span>FO</span></h4>
+          <ul class="contact-form">
+            <li><i class="fa fa-map-marker"></i>
+              <!-- Getting Content from 'paragraph' table in 'lascomdb' and 'id=14'  -->
+              <h6>
+                <?php
+                //database connection
+                $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                // Check connection
+                if (!$connection) {
+                  die("Connection failed: " . mysqli_connect_error());
+                }
+
+                //Fetching text from "paragraph" table
+                $sql = "SELECT Content FROM paragraph WHERE Paragraphid = 14";
+                $result = mysqli_query($connection, $sql);
+                $row = mysqli_fetch_assoc($result);
+                $content = $row['Content'];
+
+                echo $content;
+
+                mysqli_close($connection);
+                ?>
+              </h6>
+            </li>
+            <li><i class="fa fa-envelope"></i>
+              <h6><strong>Mail Us:</strong> <a href="#">Lascom@gmail.com</a></h6>
+            </li>
+            <li><i class="fa fa-phone"></i>
+              <h6><strong>Phone:</strong> +91-6383191792 </h6>
+            </li>
+            <li><i class="fa fa-wechat"></i>
+              <h6><strong>Website:</strong> <a href="#">www.Lascom.com</a> </h6>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Form Begins -->
+        <div class="col-md-6 col-sm-6">
+
+          <form id="main-contact-form" action="Contact.php" name="frmContact" method="post">
+
+            <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" name="txtname" class="form-control" placeholder="Name" required="required">
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="email" name="txtmail" class="form-control" placeholder="Email Address" required="required">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="txtsubject" class="form-control" placeholder="Subject" required="required">
+            </div>
+
+            <div class="form-group">
+              <textarea name="txtmessage" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+            </div>
+
+            <input class="btn btn-primary" name="txtsubmit" type="submit" />
+          </form>
+        </div>
+        <!-- Contact form ends -->
+
       </div>
     </div>
-  </div>
-  <!--Client-Section-Start-->
-  <div id="client">
-    <div class="container">
-      <div id="client-slider" class="owl-carousel">
-        <div class="item client-logo"> <a href="#"><img src="images/clients/1.png" class="img-responsive" alt="" /></a>
-        </div>
-        <div class="item client-logo"> <a href="#"><img src="images/clients/2.png" class="img-responsive" alt="" /></a>
-        </div>
-        <div class="item client-logo"> <a href="#"><img src="images/clients/3.png" class="img-responsive" alt="" /></a>
-        </div>
-        <div class="item client-logo"> <a href="#"><img src="images/clients/4.png" class="img-responsive" alt="" /></a>
-        </div>
-        <div class="item client-logo"> <a href="#"><img src="images/clients/5.png" class="img-responsive" alt="" /></a>
-        </div>
-        <div class="item client-logo"> <a href="#"><img src="images/clients/6.png" class="img-responsive" alt="" /></a>
-        </div>
-        <div class="item client-logo"> <a href="#"><img src="images/clients/7.png" class="img-responsive" alt="" /></a>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
   <!-- footer Start -->
   <footer id="footer">
     <div class="bg-sec">

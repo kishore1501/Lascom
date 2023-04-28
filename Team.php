@@ -203,7 +203,7 @@
                     <!-- #3 -->
                     <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="team-sec">
-                            <div class="team-img"> <img src="images/Team/HeadIT.jpg" class="img-responsive" alt="">
+                            <div class="team-img"> <img src="images/Team/HeadIT(1).jpg" class="img-responsive" alt="">
                                 <div class="team-desc">
                                     <h5>Rajesh Krishnamurthi </h5>
                                     <p>Head IT</p>
