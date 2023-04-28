@@ -173,7 +173,6 @@
                                 <div class="team-desc">
                                     <h5>Shri P Ravi</h5>
                                     <h6>Chairman</h6>
-                                    <p>A Versatile and Strategic Entrepreneur in Service Industry.</p>
                                     <ul class="team-social-icon">
                                         <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
                                         <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>

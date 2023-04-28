@@ -165,7 +165,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="col-md-4 blog-sec">
+                    <div class="col-md-6 blog-sec">
                         <div class="blog-info"> <img src="images/Blog/1.jpg" class="img-responsive" alt="">
                             <div class="data-meta">
                                 <h4>Jan</h4>
@@ -173,7 +173,7 @@
                                 2023
                             </div>
                             <a href="https://www.accenture.com/us-en/insights/digital-transformation-index">
-                                <h5>Impact of Digital Transformation in Food and Beverage Industries</h5>
+                                <h5>What all the impact of Digital Transformation in Food and Beverage Industries</h5>
                             </a>
                             <ul class="blog-icon">
                                 <li><i class="fa fa-pencil"></i><a href="#">
@@ -191,7 +191,7 @@
                             <a href="#" class="btn-blg">Read More.....</a>
                         </div>
                     </div>
-                    <div class="col-md-4 blog-sec">
+                    <div class="col-md-6 blog-sec">
                         <div class="blog-info"> <img src="images/Blog/2.jpg" class="img-responsive" alt="">
                             <div class="data-meta">
                                 <h4>Jan</h4>
@@ -214,34 +214,7 @@
                                 beverage industry.</p>
                             <a href="#" class="btn-blg">Read More.....</a>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="col-md-4 blog-sec">
-                            <div class="blog-info"> <img src="images/Blog/1.jpg" class="img-responsive" alt="">
-                                <div class="data-meta">
-                                    <h4>Jan</h4>
-                                    <strong>15</strong><br>
-                                    2023
-                                </div>
-                                <a href="#">
-                                    <h5>Impact of Digital Transformation in Food and Beverage Industries</h5>
-                                </a>
-                                <ul class="blog-icon">
-                                    <li><i class="fa fa-pencil"></i><a href="#">
-                                            <h6>Kishore Ramesh</h6>
-                                        </a></li>
-                                    <li class="comment"><i class="fa fa-comment"></i><a href="#">
-                                            <h6>123</h6>
-                                        </a></li>
-                                </ul>
-                                <p>The Benefits of Digital Transformation for the Food and Beverage Industry: With the
-                                    rise of Industry
-                                    4.0, digital transformation is becoming increasingly important for companies looking
-                                    to improve
-                                    efficiency, reduce costs, and stay competitive.</p>
-                                <a href="#" class="btn-blg">Read More.....</a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>

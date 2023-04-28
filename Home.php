@@ -227,9 +227,8 @@
   <div class="bg-sec">
     <div class="container">
       <div class="col-md-6 col-sm-6 col-xs-6">
-        <a href="/Contact.php">
+        <a href="Contact.php">
           <h3 class="hvr-pulse"><u>To know more please contact us.</u></h3>
-
         </a>
       </div>
     </div>

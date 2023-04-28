@@ -31,6 +31,38 @@
     <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
     <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
 
+    <script>
+        function showMessage() {
+            alert("Data inserted successfully");
+        }
+    </script>
+
+    <?php
+    //get data
+    $txtname = isset($_POST['txtname']) ? $_POST['txtname'] : '';
+    $txtmail = isset($_POST['txtmail']) ? $_POST['txtmail'] : '';
+    $txtsubject = isset($_POST['txtsubject']) ? $_POST['txtsubject'] : '';
+    $txtmessage = isset($_POST['txtmessage']) ? $_POST['txtmessage'] : '';
+
+    //database connection
+    $connection = new mysqli("localhost", "root", "", "LascomDB");
+    if ($connection->connect_error) {
+        die("Failed to connect: " . $connection->connect_error);
+    } else {
+        if (!empty($txtname)) {
+            $stmt = $connection->prepare("INSERT INTO contacttable (Name, Email_Address, Subject, Message) VALUES (?, ?, ?, ?)");
+            $stmt->bind_param("ssss", $txtname, $txtmail, $txtsubject, $txtmessage);
+            $result = $stmt->execute();
+            if ($result) {
+                echo "<script>showMessage();</script>";
+            } else {
+                echo "Error: " . $stmt->error;
+            }
+            $stmt->close();
+        }
+    }
+    ?>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar-default" data-offset="100">
@@ -433,7 +465,7 @@
                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-6">
-                        <form id="main-contact-form" action="Contact.php" name="frmContact" method="post">
+                        <form id="main-contact-form" action="Features.php" name="frmContact" method="post">
 
                             <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 
