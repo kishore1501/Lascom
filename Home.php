@@ -62,7 +62,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a class="scroll" href="Home.php"><b>Home</b></a></li>
+              <li class="active"><a class="scroll" href="Home.php">Home</a></li>
               <li><a href="AboutUS.php">About US</a></li>
               <li><a href="Services.php">Services</a></li>
               <li><a href="Portfolio.php">Portfolio</a></li>
@@ -82,7 +82,7 @@
   <section id="slider">
     <div id="home-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="item active" style="background-image:url(images/Slider/slider-4.jpg);">
+        <div class="item active" style="background-image:url(images/Slider/slider-4.jpg); filter: brightness(200%);">
           <div class="carousel-caption container">
             <div class="row">
               <div class="col-md-7 col-sm-12 col-xs-12">
@@ -115,7 +115,7 @@
             </div>
           </div>
         </div>
-        <div class="item" style="background-image:url(images/Slider/slider-1.jpg)">
+        <div class="item" style="background-image:url(images/Slider/slider-1.jpg); filter: brightness(110%);">
           <div class="carousel-caption container">
             <div class="row">
               <div class="col-md-7 col-sm-12 col-xs-12">

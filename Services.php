@@ -81,7 +81,7 @@
     <section id="slider">
         <div id="home-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="item active" style="background-image:url(images/Slider/slider-4.jpg)">
+                <div class="item active" style="background-image:url(images/Slider/slider-4.jpg);filter: brightness(200%);">
                     <div class="carousel-caption container">
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item" style="background-image:url(images/Slider/slider-1.jpg)">
+                <div class="item" style="background-image:url(images/Slider/slider-1.jpg); filter: brightness(110%);">
                     <div class="carousel-caption container">
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
@@ -154,6 +154,232 @@
                 <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
+
+        <!--Service-Section-Start-->
+        <section id="service">
+
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="heading">
+                        <h2>OUR SERVIC<span>E</span></h2>
+                        <div class="line"></div>
+                        <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=3'  -->
+                        <p>
+                            <?php
+                            //database connection
+                            $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                            // Check connection
+                            if (!$connection) {
+                                die("Connection failed: " . mysqli_connect_error());
+                            }
+
+                            //Fetching text from "paragraph" table
+                            $sql = "SELECT Paragraph FROM servicepage WHERE id = 3";
+                            $result = mysqli_query($connection, $sql);
+                            $row = mysqli_fetch_assoc($result);
+                            $Paragraph = $row['Paragraph'];
+
+                            echo $Paragraph;
+
+                            mysqli_close($connection);
+                            ?>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="features-sec">
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                            <div class="media service-box">
+                                <div class="pull-left"> <i class="fa fa-line-chart"></i> </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading">UI/UX Design</h5>
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=4'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 4";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $Paragraph = $row['Paragraph'];
+
+                                        echo $Paragraph;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                            <div class="media service-box">
+                                <div class="pull-left"> <i class="fa fa-cubes"></i> </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading">Static & Dynamic Website</h5>
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=5'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 5";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $Paragraph = $row['Paragraph'];
+
+                                        echo $Paragraph;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                            <div class="media service-box">
+                                <div class="pull-left"> <i class="fa fa-pie-chart"></i> </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading">Responsive Website</h5>
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=6'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 6";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $Paragraph = $row['Paragraph'];
+
+                                        echo $Paragraph;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                            <div class="media service-box">
+                                <div class="pull-left"> <i class="fa fa-bar-chart"></i> </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading">E-Commerce Website</h5>
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=7'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 7";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $Paragraph = $row['Paragraph'];
+
+                                        echo $Paragraph;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                            <div class="media service-box">
+                                <div class="pull-left"> <i class="fa fa-language"></i> </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading">Portal Website</h5>
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=8'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 8";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $Paragraph = $row['Paragraph'];
+
+                                        echo $Paragraph;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                            <div class="media service-box">
+                                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading">Content Creation</h5>
+                                    <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=9'  -->
+                                    <p>
+                                        <?php
+                                        //database connection
+                                        $connection = new mysqli("localhost", "root", "", "lascomdb");
+
+                                        // Check connection
+                                        if (!$connection) {
+                                            die("Connection failed: " . mysqli_connect_error());
+                                        }
+
+                                        //Fetching text from "paragraph" table
+                                        $sql = "SELECT Paragraph FROM servicepage WHERE id = 9";
+                                        $result = mysqli_query($connection, $sql);
+                                        $row = mysqli_fetch_assoc($result);
+                                        $Paragraph = $row['Paragraph'];
+
+                                        echo $Paragraph;
+
+                                        mysqli_close($connection);
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--Features-Section-Start-->
         <section id="features">
@@ -233,7 +459,7 @@
                             <h5>Graphic Design</h5>
                             <div class="line"></div>
                             <div class="clearfix"></div>
-                            <!-- Getting Content from 'featurespage' table in 'lascomdb' and 'id=5'  -->
+                            <!-- Getting Content from 'servicepage' table in 'lascomdb' and 'id=10'  -->
                             <p>
                                 <?php
                                 //database connection
@@ -245,7 +471,7 @@
                                 }
 
                                 //Fetching text from "paragraph" table
-                                $sql = "SELECT Paragraph FROM featurespage WHERE id = 5";
+                                $sql = "SELECT Paragraph FROM servicepage WHERE id = 10";
                                 $result = mysqli_query($connection, $sql);
                                 $row = mysqli_fetch_assoc($result);
                                 $Paragraph = $row['Paragraph'];
