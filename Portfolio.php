@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Lascom</title>
+    <title>SRMPR Lascom</title>
 
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -56,15 +56,15 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="#menu">
-                            <h1 style="font-size: 1.4em;">SRM PR LASCOM</h1>
+                            <h1 style="font-size: 1.4em;">SRMPR LASCOM</h1>
                         </a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li><a href="Home.php">Home</a></li>
-                            <li><a href="Services.php">Service</a></li>
-                            <li><a href="Features.php">Features</a></li>
+                            <li><a href="AboutUS.php">About US</a></li>
+                            <li><a href="Services.php">Services</a></li>
                             <li class="active"><a class="scroll" href="Portfolio.php">Portfolio</a></li>
                             <li><a href="Team.php">Team</a></li>
                             <li><a href="Blog.php">Blog</a></li>
@@ -81,7 +81,7 @@
     <section id="slider">
         <div id="home-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="item active" style="background-image:url(images/Slider/01.jpg)">
+                <div class="item active" style="background-image:url(images/Slider/slider-4.jpg)">
                     <div class="carousel-caption container">
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item" style="background-image:url(images/Slider/02.jpg)">
+                <div class="item" style="background-image:url(images/Slider/slider-1.jpg)">
                     <div class="carousel-caption container">
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
@@ -189,7 +189,9 @@
                         <li><a href="#" data-filter=".university">Universities</a></li>
                         <li><a href="#" data-filter=".cement">Cements</a></li>
                         <li><a href="#" data-filter=".construction">Construction</a></li>
-                        <li><a href="#" data-filter=".train">Train</a></li>
+                        <li><a href="#" data-filter=".train">Railways</a></li>
+                        <li><a href="#" data-filter=".hospital">SIMS</a></li>
+
                     </ul>
                     <!--/#portfolio-filter-->
                 </div>
@@ -199,7 +201,7 @@
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Cements(1).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Cements(1).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-1</h6>
-                                <p>Lorem Ipsum</p>
+                                <p>Cements</p>
                             </div>
                         </div>
                     </div>
@@ -209,7 +211,7 @@
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-University(1).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-University(1).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-2</h6>
-                                <p>Lorem Ipsum</p>
+                                <p>University</p>
                             </div>
                         </div>
                     </div>
@@ -219,7 +221,7 @@
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Cements(2).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Cements(2).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-3</h6>
-                                <p>Lorem Ipsum</p>
+                                <p>Cement</p>
                             </div>
                         </div>
                     </div>
@@ -229,7 +231,7 @@
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-University(2).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-University(2).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
                                 <h6>ITEM-4</h6>
-                                <p>Lorem Ipsum</p>
+                                <p>University</p>
                             </div>
                         </div>
                     </div>
@@ -314,6 +316,37 @@
                         </div>
                     </div>
                     <!--/.portfolio-item-->
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item hospital">
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-hospital(1).jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Train(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                                <h6>ITEM-13</h6>
+                                <p>Lorem Ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item hospital">
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-hospital(2).jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Train(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                                <h6>ITEM-14</h6>
+                                <p>Lorem Ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item hospital">
+                        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-hospital(3).jpg" alt="">
+                            <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Train(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                                <h6>ITEM-15</h6>
+                                <p>Lorem Ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
                 </div>
             </div>
         </section>

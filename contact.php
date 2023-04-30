@@ -86,15 +86,15 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="#menu">
-                            <h1 style="font-size: 1.4em;">SRM PR LASCOM</h1>
+                            <h1 style="font-size: 1.4em;">SRMPR LASCOM</h1>
                         </a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li><a href="Home.php">Home</a></li>
-                            <li><a href="Services.php">Service</a></li>
-                            <li><a href="Features.php">Features</a></li>
+                            <li><a href="AboutUS.php">About US</a></li>
+                            <li><a href="Services.php">Services</a></li>
                             <li><a href="Portfolio.php">Portfolio</a></li>
                             <li><a href="Team.php">Team</a></li>
                             <li><a href="Blog.php">Blog</a></li>
@@ -111,7 +111,7 @@
     <section id="slider">
         <div id="home-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="item active" style="background-image:url(images/Slider/01.jpg)">
+                <div class="item active" style="background-image:url(images/Slider/slider-4.jpg)">
                     <div class="carousel-caption container">
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
@@ -144,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item" style="background-image:url(images/Slider/02.jpg)">
+                <div class="item" style="background-image:url(images/Slider/slider-1.jpg)">
                     <div class="carousel-caption container">
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">

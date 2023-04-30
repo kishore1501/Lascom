@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SRM PR LASCOM</title>
+    <title>SRMPR LASCOM</title>
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
@@ -49,21 +49,21 @@
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <h1 style="font-size: 1.4em;">SRM PR LASCOM</h1>
+                            <h1 style="font-size: 1.4em;">SRMPR LASCOM</h1>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="#menu">
-                            <h1 style="font-size: 1.4em;">SRM PR Lascom</h1>
+                            <h1 style="font-size: 1.4em;">SRMPR Lascom</h1>
                         </a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li><a href="Home.php">Home</a></li>
-                            <li><a href="Services.php">Service</a></li>
-                            <li><a href="Features.php">Features</a></li>
+                            <li><a href="AboutUS.php">About US</a></li>
+                            <li><a href="Services.php">Services</a></li>
                             <li><a href="Portfolio.php">Portfolio</a></li>
                             <li><a href="Team.php">Team</a></li>
                             <li class="active"><a class="scroll" href="Blog.php">Blog</a></li>
@@ -80,7 +80,7 @@
     <section id="slider">
         <div id="home-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="item active" style="background-image:url(images/Slider/01.jpg)">
+                <div class="item active" style="background-image:url(images/Slider/slider-4.jpg)">
                     <div class="carousel-caption container">
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item" style="background-image:url(images/Slider/02.jpg)">
+                <div class="item" style="background-image:url(images/Slider/slider-1.jpg)">
                     <div class="carousel-caption container">
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
@@ -166,14 +166,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="col-md-6 blog-sec">
-                        <div class="blog-info"> <img src="images/Blog/1.jpg" class="img-responsive" alt="">
+                        <div class="blog-info"> <img src="images/Blog/4.jpg" class="img-responsive" alt="">
                             <div class="data-meta">
-                                <h4>Jan</h4>
-                                <strong>15</strong><br>
-                                2023
+                                <h4>Aug</h4>
+                                <strong>27</strong><br>
+                                2019
                             </div>
-                            <a href="https://www.accenture.com/us-en/insights/digital-transformation-index">
-                                <h5>What all the impact of Digital Transformation in Food and Beverage Industries</h5>
+                            <a href="http://faceinews.com/?p=16398" target="_blank">
+                                <h5>INR 3.5 Crore state-of-the-art technology inaugurated at SRMIST</h5>
                             </a>
                             <ul class="blog-icon">
                                 <li><i class="fa fa-pencil"></i><a href="#">
@@ -192,26 +192,26 @@
                         </div>
                     </div>
                     <div class="col-md-6 blog-sec">
-                        <div class="blog-info"> <img src="images/Blog/2.jpg" class="img-responsive" alt="">
+                        <div class="blog-info"> <img src="images/Blog/5.jpg" class="img-responsive" alt="">
                             <div class="data-meta">
-                                <h4>Jan</h4>
-                                <strong>22</strong><br>
-                                2023
+                                <h4>DEC</h4>
+                                <strong>27</strong><br>
+                                2020
                             </div>
-                            <a href="#">
-                                <h5>How to Improve Supply Chain Visibility with Product Lifecycle Management (PLM)</h5>
+                            <a href="https://www.collegechalo.com/news/srmist-16th-convocation-remains-a-great/" target="_blank">
+                                <h5>SRMIST 16th convocation remains a great grand affair</h5>
                             </a>
                             <ul class="blog-icon">
                                 <li><i class="fa fa-pencil"></i><a href="#">
-                                        <h6>Tara Krishnan</h6>
+                                        <h6>S. Vishnu Sharma</h6>
                                     </a></li>
                                 <li class="comment"><i class="fa fa-comment"></i><a href="#">
                                         <h6>201</h6>
                                     </a></li>
                             </ul>
-                            <p>Supply chain visibility is a major challenge for many companies, especially those in the
-                                food and
-                                beverage industry.</p>
+                            <p>The students who received the degrees during SRMIST 16th convocation were from the faculties of
+                                engineering and technology, faculty of science and humanities, medicine and health sciences and management
+                                studies including 129 Ph.D. scholars.</p>
                             <a href="#" class="btn-blg">Read More.....</a>
                         </div>
 

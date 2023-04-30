@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 25, 2023 at 06:53 AM
+-- Generation Time: Apr 30, 2023 at 07:26 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -20,6 +20,57 @@ SET time_zone = "+00:00";
 --
 -- Database: `lascomdb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `aboutuspage`
+--
+
+CREATE TABLE `aboutuspage` (
+  `id` int(11) NOT NULL,
+  `Paragraph` varchar(600) NOT NULL,
+  `Date_and_Time` datetime NOT NULL,
+  `Description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `aboutuspage`
+--
+
+INSERT INTO `aboutuspage` (`id`, `Paragraph`, `Date_and_Time`, `Description`) VALUES
+(1, 'Lascom is a dynamic website, which offer a more engaging and user-friendly experience for its visitors, as well as provide better functionality and performance for its owners.', '2023-04-29 08:13:03', ''),
+(2, 'Empowering enterprises to compete in the digital economy through agile methodologies, customer collaboration, engineering tools, hybrid teams, and global delivery, integrating hardware, software, and services.', '2023-04-29 08:14:27', ''),
+(4, '1969 – Inception of Florence Nightingale Primary School.', '2023-04-29 08:37:50', ''),
+(5, '1981 – Upgrading the Primary School to the status of Matriculation Higher Secondary School.\r\n', '2023-04-29 08:41:14', ''),
+(6, '1984 – Launch of Valliammai Polytechnic Institute.\r\n', '2023-04-29 08:41:14', ''),
+(7, '1985 – Launch of SRM Engineering College in Kattankulathur, near Chennai.\r\n', '2023-04-30 06:15:07', ''),
+(8, '1992 – 93 – Launch of SRM College of Nursing and SRM College of Pharmacy.\r\n', '2023-04-30 06:17:04', ''),
+(9, '1993 – 94 – Launch of SRM School of Nursing and SRM College of Physiotherapy.\r\n', '2023-04-30 06:17:20', ''),
+(10, '1993 – Launch of SRM Institute of Hotel Management in Chennai and Trichy\r\n', '2023-04-30 06:17:35', ''),
+(11, '1993 – 94 – Launch of SRM Arts & Science College affiliated to the University of Madras.\r\n', '2023-04-30 06:17:48', ''),
+(12, '1996 – Launch of SRM Polytechnic Institute.\r\n', '2023-04-30 06:18:09', ''),
+(13, '1996 – 97 – Launch of Easwari Engineering College affiliated to the Anna University.\r\n', '2023-04-30 06:19:44', ''),
+(14, '1996 – 97 – Launch of SRM College of Occupational Therapy.\r\n', '2023-04-30 06:19:59', ''),
+(15, '1997 – 98 – Launch of SRM Institute of Management and Technology, Delhi.\r\n', '2023-04-30 06:20:17', ''),
+(16, '1999 – Launch of Valliammai Engineering College affiliated to the Anna University.\r\n', '2023-04-30 06:20:30', ''),
+(17, '2002 – UGC declared the SRM Institute of Science and Technology, Chennai comprising SRM Dental College, Ramapuram as deemed University under Sec. 3 of the UGC Act 1956.', '2023-04-30 06:20:45', ''),
+(18, '2003 – SRM Engineering, Kattankulathur, Chennai was brought under the ambit of SRMIST, Chennai.\r\n', '2023-04-30 06:21:06', ''),
+(19, '2005 – 06 – The 1222-bed SRM Medical College Hospital and Research Centre, Chennai and School of Education, Faculty of Science and Humanities, was started in Kattankulathur.', '2023-04-30 06:24:47', ''),
+(20, '2005 – SRM College of Pharmacy, Nursing, Physiotherapy, Occupational Therapy, in Chennai and SRM Institute of Management and Technology, Modinagar, Delhi was brought under the ambit of SRM University.', '2023-04-30 06:25:01', ''),
+(21, '2006 – In September 2006, the Universities received recognition under Sec. 3 of the UGC Act 1956. SRMIST has since been known as SRM University.', '2023-04-30 06:25:20', ''),
+(22, '2007 – SRM Kattankulathur Dental College was started under the ambit of SRM University.\r\n', '2023-04-30 06:25:59', ''),
+(23, '2007 – Launch of SRM Community Radio.\r\n', '2023-04-30 06:26:06', ''),
+(24, '2009 – 10 – Launch of 450-bed Chennai Medical College, Trichy.\r\n', '2023-04-30 06:26:27', ''),
+(25, '2010 – Inter-Disciplinary School of Indian System of Medicine.\r\n', '2023-04-30 06:31:35', ''),
+(26, '2010 – 2011 – TRP Engineering College, Trichy, affiliated to the Anna University.\r\n', '2023-04-30 06:31:51', ''),
+(27, '2011 – Launch of Faculty of Science and Humanities, Vadapalani, SRM University.\r\n', '2023-04-30 06:32:04', ''),
+(28, '2012 – Launch of SRM University – Sonipat, Haryana – Medical, Engineering, Management, Science and Humanities\r\n', '2023-04-30 06:32:30', ''),
+(29, '2012 – Launch of SIMS Hospital – Vadapalani, Chennai – a 360-bed multi super specialty hospital in Vadapalani, Chennai\r\n', '2023-04-30 06:32:45', ''),
+(30, 'As part of their growth, the Group has set up a world-class healthcare facility, SIMS Hospital – a 345-bed tertiary care corporate hospital at Vadapalani, Chennai – which has the complete spectrum of Medical Services. SIMS Hospital’s vision is on paramount Patient Experience and Clinical Outcomes.', '2023-04-30 06:37:54', ''),
+(31, 'SRM Group is well-known for their educational forays had established a 1220 bed hospital at Kattankulathur near Chennai as part of their foray into healthcare education and healthcare services. A group that made its humble beginnings with a primary school in 1969, SRM is now a name synonymous with quality education. The group, which launched its first engineering college in 1985, started several quality institutions in the years that followed, whose steady progress contributed to its college acquiring the status of a deemed university by 2002.', '2023-04-30 06:40:01', ''),
+(32, 'A 1200-crore conglomerate with a formidable presence in the fields of engineering, medical education, hospitality, industry, healthcare, infotainment and transport, the SRM group has established SRM Hospitals, as well as colleges catering to the medical disciplines of nursing, physiotherapy, dentistry, occupational therapy and Indian medicine. SRM runs medical centres operating in multiple disciplines, including microbiology, biochemistry, biotechnology and pharmacology. These services, 40% of which are provided free of cost to the underprivileged, are made available to the general public at h', '2023-04-30 06:40:22', ''),
+(33, 'Over the years, SRM has grown to be known for its integrity, ethical practice and transparency. Across all its verticals, the SRM Group has built on its foundation of deep-rooted values and SIMS Hospital, Chennai endeavours to continue the group’s legacy with respect to its patients, partners and employees.\r\n', '2023-04-30 06:41:35', '');
 
 -- --------------------------------------------------------
 
@@ -59,7 +110,9 @@ INSERT INTO `contacttable` (`ID`, `Name`, `Email_Address`, `Subject`, `Message`,
 (16, 'after ID', 'xyz@gmail.com', 'Changed the location contactdb', 'fdhf', '2023-04-24 11:14:46', ''),
 (17, 'after ID', 'xyz@gmail.com', 'Changed the location contactdb', 'z', '2023-04-24 11:15:39', ''),
 (18, 'after ID', 'xyz@gmail.com', 'Changed the location contactdb', 'kthr', '2023-04-24 11:20:31', ''),
-(19, 'after ID', 'xyz@gmail.com', 'Changed the location contactdb', 'hjsagdh', '2023-04-24 11:22:18', '');
+(19, 'after ID', 'xyz@gmail.com', 'Changed the location contactdb', 'hjsagdh', '2023-04-24 11:22:18', ''),
+(20, 'after Description', 'Kr1524@srmist.edu.in', 'sdwqdscss', 'sadff', '2023-04-29 11:35:13', ''),
+(21, 'aboutuspage', 'Kr1524@srmist.edu.in', 'Changed the location contactdb', 'j', '2023-04-29 11:36:31', '');
 
 -- --------------------------------------------------------
 
@@ -191,11 +244,33 @@ INSERT INTO `servicepage` (`id`, `Paragraph`, `Date_and_Time`) VALUES
 (5, 'Our customer-centric marketing approach is all about creating value and building lasting relationships. We strive to understand your needs and deliver creative, effective campaigns that resonate with you. Our goal is to help your business grow and succeed, while providing you with a memorable brand experience.', '2023-04-25 05:33:02'),
 (6, 'Our SEO services are designed to help your business to increase the online visibility and drive more traffic to your website. We utilize the latest techniques and best practices to improve your search engine rankings and attract more qualified leads. Our focus is on delivering measurable results and helping your business succeed in the competitive online marketplace. Let us help you achieve your SEO goals and grow your business.', '2023-04-25 05:33:24'),
 (7, 'Our Android app is designed with you in mind. It\'s user-friendly, intuitive, and packed with features to enhance your mobile experience. We\'ve made sure to optimize the app for speed and reliability, so you can enjoy seamless performance no matter where you are. With our app, you can easily stay connected, manage your account, and access all the information you need, right at your fingertips. Download it today and see for yourself!', '2023-04-25 05:33:38'),
-(8, 'Clean Code is all about writing code that is easy to read, maintain, and understand. It\'s about following best practices, avoiding unnecessary complexity, and striving for simplicity. Good coding practices can save time and money in the long run, and lead to more reliable and efficient code. Our focus on Clean Code helps us to create software that is not only functional but also elegant and easy to work with.', '2023-04-25 05:33:52');
+(8, 'Clean Code is all about writing code that is easy to read, maintain, and understand. It\'s about following best practices, avoiding unnecessary complexity, and striving for simplicity. Good coding practices can save time and money in the long run, and lead to more reliable and efficient code. Our focus on Clean Code helps us to create software that is not only functional but also elegant and easy to work with.', '2023-04-25 05:33:52'),
+(9, 'Lascom is a dynamic website, which offer a more engaging and user-friendly experience for its visitors, as well as provide better functionality and performance for its owners.', '2023-04-25 05:31:53'),
+(10, 'Empowering enterprises to compete in the digital economy through agile methodologies, customer collaboration, engineering tools, hybrid teams, and global delivery, integrating hardware, software, and services.', '2023-04-25 05:32:15'),
+(11, 'We value our customers above all else. Our goal is to provide you with exceptional products, services, and support that exceed your expectations. Your satisfaction and loyalty are our highest priorities.', '2023-04-25 05:32:43'),
+(12, 'UI design creates visually appealing, intuitive, and engaging digital products that provide a seamless user experience. Our designs are informed by research, best practices and aim to help businesses achieve their goals while meeting user needs.', '2023-04-25 05:32:49'),
+(13, 'Our customer-centric marketing approach is all about creating value and building lasting relationships. We strive to understand your needs and deliver creative, effective campaigns that resonate with you. Our goal is to help your business grow and succeed, while providing you with a memorable brand experience.', '2023-04-25 05:33:02'),
+(14, 'Our SEO services are designed to help your business to increase the online visibility and drive more traffic to your website. We utilize the latest techniques and best practices to improve your search engine rankings and attract more qualified leads. Our focus is on delivering measurable results and helping your business succeed in the competitive online marketplace. Let us help you achieve your SEO goals and grow your business.', '2023-04-25 05:33:24'),
+(15, 'Our Android app is designed with you in mind. It\'s user-friendly, intuitive, and packed with features to enhance your mobile experience. We\'ve made sure to optimize the app for speed and reliability, so you can enjoy seamless performance no matter where you are. With our app, you can easily stay connected, manage your account, and access all the information you need, right at your fingertips. Download it today and see for yourself!', '2023-04-25 05:33:38'),
+(16, 'Clean Code is all about writing code that is easy to read, maintain, and understand. It\'s about following best practices, avoiding unnecessary complexity, and striving for simplicity. Good coding practices can save time and money in the long run, and lead to more reliable and efficient code. Our focus on Clean Code helps us to create software that is not only functional but also elegant and easy to work with.', '2023-04-25 05:33:52'),
+(17, 'Lascom is a dynamic website, which offer a more engaging and user-friendly experience for its visitors, as well as provide better functionality and performance for its owners.', '2023-04-25 05:31:53'),
+(18, 'Empowering enterprises to compete in the digital economy through agile methodologies, customer collaboration, engineering tools, hybrid teams, and global delivery, integrating hardware, software, and services.', '2023-04-25 05:32:15'),
+(19, 'We value our customers above all else. Our goal is to provide you with exceptional products, services, and support that exceed your expectations. Your satisfaction and loyalty are our highest priorities.', '2023-04-25 05:32:43'),
+(20, 'UI design creates visually appealing, intuitive, and engaging digital products that provide a seamless user experience. Our designs are informed by research, best practices and aim to help businesses achieve their goals while meeting user needs.', '2023-04-25 05:32:49'),
+(21, 'Our customer-centric marketing approach is all about creating value and building lasting relationships. We strive to understand your needs and deliver creative, effective campaigns that resonate with you. Our goal is to help your business grow and succeed, while providing you with a memorable brand experience.', '2023-04-25 05:33:02'),
+(22, 'Our SEO services are designed to help your business to increase the online visibility and drive more traffic to your website. We utilize the latest techniques and best practices to improve your search engine rankings and attract more qualified leads. Our focus is on delivering measurable results and helping your business succeed in the competitive online marketplace. Let us help you achieve your SEO goals and grow your business.', '2023-04-25 05:33:24'),
+(23, 'Our Android app is designed with you in mind. It\'s user-friendly, intuitive, and packed with features to enhance your mobile experience. We\'ve made sure to optimize the app for speed and reliability, so you can enjoy seamless performance no matter where you are. With our app, you can easily stay connected, manage your account, and access all the information you need, right at your fingertips. Download it today and see for yourself!', '2023-04-25 05:33:38'),
+(24, 'Clean Code is all about writing code that is easy to read, maintain, and understand. It\'s about following best practices, avoiding unnecessary complexity, and striving for simplicity. Good coding practices can save time and money in the long run, and lead to more reliable and efficient code. Our focus on Clean Code helps us to create software that is not only functional but also elegant and easy to work with.', '2023-04-25 05:33:52');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `aboutuspage`
+--
+ALTER TABLE `aboutuspage`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `contacttable`
@@ -238,10 +313,16 @@ ALTER TABLE `servicepage`
 --
 
 --
+-- AUTO_INCREMENT for table `aboutuspage`
+--
+ALTER TABLE `aboutuspage`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+--
 -- AUTO_INCREMENT for table `contacttable`
 --
 ALTER TABLE `contacttable`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `featurespage`
@@ -271,7 +352,7 @@ ALTER TABLE `portfoliopage`
 -- AUTO_INCREMENT for table `servicepage`
 --
 ALTER TABLE `servicepage`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

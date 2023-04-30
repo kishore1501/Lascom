@@ -310,14 +310,12 @@ a.navbar-brand img {
 
 #menu ul.nav li a:hover,
 #menu ul.nav li a.active {
-	color: #0693e3;
+	color: #0b0c11;
 	transition: all 0.4s;
 }
 
-#menu .navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-	color: #0693e3;
+#menu .navbar-default .navbar-nav>.active>a .navbar-default .navbar-nav>.active>a:hover .navbar-default .navbar-nav>.active>a:focus {
+	color: #0b0c11;
 	background: transparent;
 }
 
@@ -331,7 +329,7 @@ ul.nav li.active a:before {
 }
 
 .on {
-	background: rgba(0, 0, 0, 0.8);
+	background: #0693e3;
 	transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
