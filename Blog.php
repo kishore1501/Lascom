@@ -66,7 +66,7 @@
                             <li><a href="Services.php">Services</a></li>
                             <li><a href="Portfolio.php">Portfolio</a></li>
                             <li><a href="Team.php">Team</a></li>
-                            <li class="active"><a class="scroll" href="Blog.php">Blog</a></li>
+                            <li class="active"><a class="scroll" href="Blog.php">Accomplishment</a></li>
                             <li><a href="Contact.php">Contact</a></li>
                         </ul>
                     </div>
@@ -158,7 +158,7 @@
         <div class="container">
             <div class="col-md-8 col-md-offset-2">
                 <div class="heading">
-                    <h2>LATEST BL<span>OG</span></h2>
+                    <h2>LATEST ACCOMPLISHME<span>NT</span></h2>
                     <div class="line"></div>
                     <p><span><strong>H</strong></span>ere are the some off our Latest blog posts</p>
                 </div>

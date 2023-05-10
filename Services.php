@@ -67,7 +67,7 @@
                             <li class="active"><a class="scroll" href="Services.php">Services</a></li>
                             <li><a href="Portfolio.php">Portfolio</a></li>
                             <li><a href="Team.php">Team</a></li>
-                            <li><a href="Blog.php">Blog</a></li>
+                            <li><a href="Blog.php">Accomplishment</a></li>
                             <li><a href="Contact.php">Contact</a></li>
                         </ul>
                     </div>
