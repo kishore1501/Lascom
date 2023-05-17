@@ -160,7 +160,7 @@
                 <div class="heading">
                     <h2>LATEST ACCOMPLISHME<span>NT</span></h2>
                     <div class="line"></div>
-                    <p><span><strong>H</strong></span>ere are the some off our Latest blog posts</p>
+                    <p><span><strong>H</strong></span>ere are the some off our Latest Accomplishments of SRM Groups. </p>
                 </div>
             </div>
             <div class="row">
@@ -177,11 +177,11 @@
                             </a>
                             <ul class="blog-icon">
                                 <li><i class="fa fa-pencil"></i><a href="#">
-                                        <h6>Kishore Ramesh</h6>
+                                        <h6>faceinews.com</h6>
                                     </a></li>
-                                <li class="comment"><i class="fa fa-comment"></i><a href="#">
+                                <!-- <li class="comment"><i class="fa fa-comment"></i><a href="#">
                                         <h6>123</h6>
-                                    </a></li>
+                                    </a></li> -->
                             </ul>
                             <p>The Benefits of Digital Transformation for the Food and Beverage Industry: With the rise
                                 of Industry
@@ -205,9 +205,9 @@
                                 <li><i class="fa fa-pencil"></i><a href="#">
                                         <h6>S. Vishnu Sharma</h6>
                                     </a></li>
-                                <li class="comment"><i class="fa fa-comment"></i><a href="#">
+                                <!-- <li class="comment"><i class="fa fa-comment"></i><a href="#">
                                         <h6>201</h6>
-                                    </a></li>
+                                    </a></li> -->
                             </ul>
                             <p>The students who received the degrees during SRMIST 16th convocation were from the faculties of
                                 engineering and technology, faculty of science and humanities, medicine and health sciences and management

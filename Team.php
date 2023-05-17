@@ -160,8 +160,8 @@
                     <div class="heading">
                         <h2>OUR TE<span>AM</span></h2>
                         <div class="line"></div>
-                        <p><span><strong>L</strong></span>orem Ipsum is simply dummy text of the printing and
-                            typesetting industry</p>
+                        <p><span><strong>O</strong></span>ur team is a dynamic group of talented individuals who are passionate about delivering
+                            exceptional results and exceeding customer expectations.</p>
                     </div>
                 </div>
 
@@ -220,7 +220,7 @@
                     <!-- #4 -->
                     <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
                         <div class="team-sec">
-                            <div class="team-img"> <img src="" class="img-responsive" alt="AGM-IT">
+                            <div class="team-img"> <img src="images/Team/AGM-IT.JPG" class="img-responsive" alt="AGM-IT">
                                 <div class="team-desc">
                                     <h5>Mr. Parthiban</h5>
                                     <p>Assistant General Manager, IT</p>

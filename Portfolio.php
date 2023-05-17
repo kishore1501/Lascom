@@ -200,8 +200,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item cement">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Cements(1).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Cements(1).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-1</h6>
-                                <p>Cements</p>
+                                <h6>Cements</h6>
+                                <a href="https://www.srmprcements.com/" target="_blank">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -210,8 +210,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate university">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-University(1).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-University(1).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-2</h6>
-                                <p>University</p>
+                                <h6>University</h6>
+                                <a href="https://www.srmist.edu.in/" target="_blank">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -220,8 +220,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item cement">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Cements(2).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Cements(2).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-3</h6>
-                                <p>Cement</p>
+                                <h6>Cements</h6>
+                                <a href="https://www.srmprcements.com/" target="_blank">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -230,8 +230,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item university">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-University(2).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-University(2).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-4</h6>
-                                <p>University</p>
+                                <h6>University</h6>
+                                <a href="https://www.srmprcements.com/" target="_blank">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -240,8 +240,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item creative cement">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Cements(3).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Cements(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-5</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>Cements</h6>
+                                <a href="https://www.srmprcements.com/" target="_blank">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -250,8 +250,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item university">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-University(3).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-University(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-6</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>University</h6>
+                                <a href="https://www.srmprcements.com/" target="_blank">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -260,8 +260,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item construction">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Construction(1).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Construction(1).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-7</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>Construction</h6>
+                                <a href="#">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -270,8 +270,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item train">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Train(1).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Train(1).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-8</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>Train</h6>
+                                <a href="https://www.srmtrain.com/login_up.php">To Know more</a>
                             </div>
                         </div>
                     </div>
@@ -280,8 +280,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item construction">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Construction(2).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Construction(2).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-9</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>Construction</h6>
+                                <a href="#">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -290,8 +290,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item train">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Train(2).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Train(2).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-10</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>Train</h6>
+                                <a href="https://www.srmtrain.com/login_up.php">To Know more</a>
                             </div>
                         </div>
                     </div>
@@ -300,8 +300,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item construction">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Construction(3).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Construction(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-11</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>Construction</h6>
+                                <a href="#">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -310,8 +310,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item train">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-Train(3).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Train(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-12</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>Train</h6>
+                                <a href="https://www.srmtrain.com/login_up.php">To Know more</a>
                             </div>
                         </div>
                     </div>
@@ -320,8 +320,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item hospital">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-hospital(1).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Train(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-13</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>SIMS</h6>
+                                <a href="https://simshospitals.com/" target="_blank">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -330,8 +330,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item hospital">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-hospital(2).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Train(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-14</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>SIMS</h6>
+                                <a href="https://simshospitals.com/" target="_blank">To know more</a>
                             </div>
                         </div>
                     </div>
@@ -340,8 +340,8 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item hospital">
                         <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/SRM-hospital(3).jpg" alt="">
                             <div class="portfolio-info"> <a class="preview" href="images/Portfolio/SRM-Train(3).jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
-                                <h6>ITEM-15</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>SIMS</h6>
+                                <a href="https://simshospitals.com/" target="_blank">To know more</a>
                             </div>
                         </div>
                     </div>
